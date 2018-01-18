@@ -1,0 +1,57 @@
+.signRead{
+    background: #fff;
+    
+    display: inline-block;
+    padding: 0.8rem;
+    .readSj{
+        margin: 0.3rem 0;
+        display: inline-block;
+        width:100%;
+        .s_p{
+            display: inline-block;
+            width: 60%;
+            float: left;
+            line-height: 1.2rem;
+            font-size: 1rem;
+        }
+        .tit{
+            color:#666666;
+            float: left;
+            width: 7rem;
+            font-size: 1rem;
+            .icon{
+                color: #ff7480;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.signBz{
+    background: #fff;
+    margin-top: 1rem;
+    padding: 1rem 3% 0.8rem;
+    .textarea{
+        width: 96%;
+        min-height: 6rem;
+        border: 0;
+        background: none;
+        resize:none 
+    }
+}
+
+.submit{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ff7480;
+    text-align: center;
+    .btn{
+        color: #FFFFFF;
+        font-size: 1.2rem;
+        padding: 0.8rem 0;
+        display: inline-block;
+        width: 100%;
+        letter-spacing:3px;
+    }
+}

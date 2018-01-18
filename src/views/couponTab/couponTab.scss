@@ -1,0 +1,163 @@
+.TabContent{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:url(../../assets/img/big-bg@2x.png) no-repeat;
+    background-size: 100% 100%;
+    .Tab{
+        display: flex;
+        align-content: center;
+        width: 100%;
+        height: 43px;
+        background: #ffffff;
+        line-height: 43px;
+        div{
+            flex: 1;
+            text-align: center;
+            color: #959595;
+            position: relative;
+            font-size: 0.3rem;
+            i{
+                width: 1px;
+                height: 18px;
+                background: #89cbcb;
+                display: inline-block;
+                position: absolute;
+                left: 98%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+        .active{
+            width: 100%;
+            height: 100%;
+            background: url(../../assets/img/active-green@2x.png) no-repeat;
+            background-size: 100% 100%;
+            color: #ffffff;
+        }
+    }
+    .content{
+        width: 95%;
+        height: 9.22rem;
+        background: url(../../assets/img/tab-bg.png) no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        margin-top: 14px;
+        .listCoupon{
+            width: 91%;
+            margin: 0 auto;
+            padding-top: 25px;
+            .ticketList{
+                width: 100%;
+                height: 1.8rem;
+                margin-top: 0.25rem;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 1.8rem;
+                }
+                .txt{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    color: #fff;
+                    padding-top: 0.4rem;
+                    .TopTxt{
+                        display: flex;
+                        width: 90%;
+                        margin: 0 auto;
+                        align-items: center;
+                        justify-content: space-between;
+                        h3{
+                            font-size: 0.3rem;
+                            padding:0;
+                            margin:0;
+                        }
+                        a{
+                            color: #fff;
+                            text-decoration: none;
+                            width: 69px;
+                            height: 23px;
+                            border-radius: 10px;
+                            background: #fff;
+                            color: #ff7681;
+                            font-size: 12px;
+                            text-align: center;
+                            line-height: 23px;
+                        }
+                    }
+                    
+                    .Time{
+                        color: #fff;
+                        font-size: 0.24rem;
+                        padding: 0;
+                        margin: 0;
+                        border-top: 1px dotted #fff;
+                        padding: 0 12px;
+                        width: 96%;
+                        margin: 0 auto;
+                        margin-top: 0.42rem;
+                        padding-top:0.02rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+                }
+            }
+            .ticketList:first-child{
+                margin-top: 0;
+            }
+            .ListInfo{ 
+                .ListInfoHead{
+                    height: 36px;
+                    line-height: 36px;
+                    padding:0 8px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    background: #b1e3e3;
+                    align-items: center;
+                    span{
+                        color: #fff;
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                }
+                .orderMainInfo{
+                    padding:0;
+                    margin:0;
+                    li{
+                        width: 100%;
+                        padding:0 12px;
+                        box-sizing: border-box;
+                        display: flex;
+                        justify-content: space-between;
+                        align-content: center;
+                        height: 32px;
+                        line-height: 32px;
+                        background: #fff;
+                        border-bottom: 1px dotted #ff9ba3;
+                        span{
+                            color: #535353;
+                            font-size: 12px;
+                            text-align: center;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+    .footer{
+        width: 100%;
+        height: 1.52rem;
+        position: absolute;
+        position: fixed;
+        bottom: -2px;
+        margin-top: 1.25rem;
+        background: url(../../assets/img/footer-crile.png) no-repeat;
+        background-size: 100% 100%;
+    }
+}

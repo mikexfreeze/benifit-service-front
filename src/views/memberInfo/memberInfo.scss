@@ -1,0 +1,197 @@
+li{
+    list-style: none;
+}
+input{
+    border-radius: 0;
+    resize: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: transparent;
+}
+.memberInfo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:url(../../assets/img/form.png) no-repeat;
+    background-size: 100% 100%;
+    .Top{
+        width: 100%;
+        height: 1.1rem;
+        background: url(../../assets/img/benefit@2x.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .content{
+        .register{
+            width: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .form{
+            width: 80%;
+            margin: 0 auto;
+            .MainInfo{
+                width: 100%;
+                margin: 0 auto;
+                .centerTag{
+                    width: 100%;
+                    height: 26px;
+                    background: url(../../assets/img/center-tg.png) no-repeat;
+                    background-size: 100% 100%;
+                    margin:0 auto;
+                    margin-top: 0.2rem;
+                }
+                li{
+                    display: flex;
+                    align-items: center;
+                    margin-top: 16px;
+                    position: relative;
+                    font-size: 0.3rem;
+                    i{
+                        position: absolute;
+                        left: 0;
+                    }
+                    .name{
+                        width: 16px;
+                        height: 18px;
+                        background: url(../../assets/img/user@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .tel{
+                        width: 11px;
+                        height: 17px;
+                        background: url(../../assets/img/tel@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .sex{
+                        width: 16px;
+                        height: 16px;
+                        background: url(../../assets/img/sex@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .birth{
+                        width: 16px;
+                        height: 16px;
+                        background: url(../../assets/img/birth@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block
+                    }
+                    .city{
+                        width: 16px;
+                        height: 18px;
+                        background: url(../../assets/img/city@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .address{
+                        width: 11px;
+                        height: 16px;
+                        background: url(../../assets/img/adress@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .emailBox{
+                        width: 13px;
+                        height: 13px;
+                        background: url(../../assets/img/emilbox@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    .email{
+                        width: 12px;
+                        height: 13.5px;
+                        background: url(../../assets/img/emil@2x.png) no-repeat;
+                        background-size: 100% 100%;
+                        display: inline-block;
+                    }
+                    span{
+                        color: #ff727e;
+                        font-size: 0.3rem;
+                        width: 22%;
+                        text-align: left;
+                        margin-left: 0.44rem;
+                    }
+                    input{
+                        border-bottom: 1px solid #ff727e;
+                        color: #ff727e;
+                        width: 90%;
+                        height: 0.45rem;
+                        font-size: 0.24rem;
+                        line-height: 0.45rem;
+                    }
+                }
+                .privacy{
+                    margin-top: 0.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    .read-cheackbox{
+                        width: 15px;
+                        height: 15px;
+                        position: absolute;
+                        left: 0;
+                        top: 11px;
+                        .checkbox-icon:after{
+                            content: '';
+                            width: 15px;
+                            height: 15px;
+                            background: url(../../assets/img/radio@2x.png) 0 0;
+                            background-size: 100% 100%;
+                            display: block;
+                            position: relative;
+                            margin-top: -28px;
+                        }
+                        input[type="checkbox"]:checked +.checkbox-icon:after{
+                            width: 15px;
+                            height: 15px;
+                            background: url(../../assets/img/radiochcked@2x.png) 0 0;
+                            background-size: 100% 100%;
+                            display: block;
+                            position: relative;
+                            margin-top: -28px;
+                        }
+                        input[type='checkbox'] {
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0.2;
+                            position: relative;
+                            margin-top: -28px;
+                            z-index: 9999;
+                          }
+                    }
+                     p{
+                        font-size: 0.24rem;
+                        line-height: 16px;
+                        padding: 0;
+                        margin: 0;
+                        margin-left: 22px;
+                         a{
+                             color: #ff727e;
+                             text-decoration: none;
+                         }
+                     }
+                }
+            }
+        }
+    }
+    .Submit{
+        width: 90%;
+        height: 47px;
+        background: #ff727e;
+        color: #ffffff;
+        text-align: center;
+        margin:0 auto;
+        border:none;
+        display: block;
+        font-size: 18px;
+        border-radius: 9px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+    }
+}
+   

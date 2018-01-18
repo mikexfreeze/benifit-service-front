@@ -1,0 +1,108 @@
+li{
+    list-style: none;
+}
+input{
+    border-radius: 0;
+    resize: none;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-color: transparent;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background:url(../../assets/img/big-bg@2x.png) no-repeat;
+    background-size: 100% 100%;
+    .Top{
+        width: 100%;
+        height: 1.1rem;
+        background: url(../../assets/img/benefit@2x.png) no-repeat;
+        background-size: 100% 100%;
+    }
+    .Main{
+        width: 100%;
+        height: 3.47rem;
+        background: url(../../assets/img/form@2x.png) no-repeat;
+        background-size: 100% 100%;
+        margin:0 auto;
+        padding: 1.02rem;
+        margin:0 14px;
+        margin: 0 auto;
+        margin-top: 1.7rem;
+        box-sizing: border-box;
+        .MainInfo{
+            width: 100%;
+            margin: 0 auto;
+            li{
+                display: flex;
+                align-items: center;
+                margin-top: 16px;
+                position: relative;
+                .tel{
+                    width: 12px;
+                    height: 17px;
+                    background: url(../../assets/img/tel@2x.png) no-repeat;
+                    background-size: 100% 100%;
+                    display: inline-block;
+                }
+                .pass{
+                    width: 12px;
+                    height: 17px;
+                    background: url(../../assets/img/pass@2x.png) no-repeat;
+                    background-size: 100% 100%;
+                    display: inline-block
+                }
+                span{
+                    color: #ff727e;
+                    font-size: 0.3rem;
+                    width: 28%;
+                    text-align: left;
+                    margin-left: 7px;
+                }
+                input{
+                    border-bottom: 1px solid #ff727e;
+                    color: #ff727e;
+                    width: 90%;
+                    height: 0.45rem;
+                    line-height: 0.45rem;
+                    font-size: 0.3rem;
+                }
+                button{
+                    width: 1.45rem;
+                    height: 0.44rem;
+                    background: #ff7380;
+                    color: #ffffff;
+                    line-height: 0.44rem;
+                    border-radius: 3px;
+                    border: none;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0.2rem;
+                    font-size: 0.24rem;
+                
+                }
+            }
+            li:first-child{
+                margin-top: 0;
+            }
+        }
+    }
+    .Submit{
+        width: 6.7rem;
+        height: 0.96rem;
+        background: #ff727e;
+        color: #ffffff;
+        text-align: center;
+        margin:0 auto;
+        border:none;
+        display: block;
+        font-size: 18px;
+        border-radius: 9px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+    }
+}

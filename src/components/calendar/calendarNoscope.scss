@@ -1,0 +1,28 @@
+#calendar{
+  .active{
+    background-color: #ff7480;
+  }
+
+  .fc-center{
+    h2{
+      line-height: 1.4;
+      font-weight: normal;
+    }
+  }
+
+  .fc-row .fc-content-skeleton{
+    padding-bottom: 0;
+    thead{
+      line-height: 3.9em;
+      td{
+        text-align:center;
+        font-size: 1.2em;
+
+        .fc-day-number{
+          float: none;
+        }
+      }
+    }
+    tbody{display: none;}
+  }
+}

@@ -1,0 +1,177 @@
+.bg{
+    width: 100%;
+    height: 100%;
+    background: url(../../assets/img/section.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.mainCenter{
+    border: 1px solid transparent;
+    padding:0 0.2rem;
+    width: 94%;
+    height: auto;
+    background: url(../../assets/img/new.png) no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto;
+    padding-bottom: 2rem;
+    margin-bottom: 1.6rem;
+    .head{
+        width: 100%;
+        height: 0.53rem;
+        margin-top: .28rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #535353;
+        font-size: .24rem;
+            .edit{
+                i{
+                    width: 0.25rem;
+                    height:0.25rem;
+                    background:url(../../assets/img/edit.png) no-repeat;
+                    background-size: 100% 100%;
+                    display: inline-block;
+                    // vertical-align: text-bottom;
+                    margin-right: 2px;
+                }
+            }
+    }
+    .center{
+        .Img{
+            width:1.7rem;
+            height: 1.76rem;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-top: -0.53rem;
+            img{
+                width: 100%;
+                height: 1.76rem;
+                border-radius: 50%;
+            }
+        }
+        .tag{
+            width: 4.98rem;
+            height:0.92rem;
+            background: url(../../assets/img/tag-top.png) no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 0.3rem;
+            text-align: center;
+            line-height: 0.92rem;
+            position: relative;
+            margin-top: -0.5rem;
+        }
+        .Card{
+            width: 100%;
+            height: 3.98rem;
+            margin:0 auto;
+            margin-top: -0.45rem;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+        }
+        .CradNum{
+            text-align: center;
+            color: #535353;
+            font-size: 0.24rem;
+            height: 0.77rem;
+            line-height: 0.77rem;
+        }
+        .CardFlex{
+            display: flex;
+           justify-content: space-evenly;
+            height:1.64rem;
+            div{
+                flex: 1;
+                background: url(../../assets/img/fiex-bg.png) no-repeat;
+                background-size: 100% 100%;
+                height:1.64rem;
+                margin-right: 0.2rem;
+            }
+            div:last-child{
+                margin-right: 0;
+            }
+            .PinkCrad{
+                span{
+                    color: #ffffff;
+                    display: block;
+                    font-size: 0.56rem;
+                    text-align: center;
+                    font-weight: 700;
+                    padding-top: 0.16rem;
+                    padding-bottom:  0.22rem;
+                    margin:0;
+                    padding:0;
+                }
+                p{
+                    padding:0;
+                    margin:0;
+                    color: #000000;
+                    font-size: .24rem;
+                    text-align: center;
+                    line-height: 0.3rem;
+                }
+            }
+        }
+        .MenberIcon{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 0.52rem;
+            li{
+                flex: 1;
+                text-decoration: none;
+                list-style: none;
+                a{
+                    display: inline-block;
+                    margin-left: 10px;
+                }
+                .icon1{
+                    width: 1.7rem;
+                    height: 1.76rem;
+                    background: url(../../assets/img/member.png) no-repeat;
+                    background-size: contain;
+                }
+                .icon2{
+                    width: 1.7rem;
+                    height: 1.76rem;
+                    background: url(../../assets/img/card.png) no-repeat;
+                    background-size: contain;
+                }
+                .icon3{
+                    width: 1.7rem;
+                    height: 1.76rem;
+                    background: url(../../assets/img/member-vip.png) no-repeat;
+                    background-size: contain;
+                }
+                p{
+                    color: #000;
+                    font-size: 0.24rem;
+                    padding:0;
+                    margin:0;
+                    text-align: center;
+                    margin-top:0.37rem;
+                }
+               
+            }
+            li:last-child{
+                margin-right: 0;
+            }
+
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: 1.52rem;
+    position: absolute;
+    bottom: 0;
+    img{
+        width: 100%;
+        height: 1.52rem;
+        margin: 0 auto;
+        // margin-top: 1.25rem;
+    }
+}

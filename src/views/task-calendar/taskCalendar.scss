@@ -1,0 +1,60 @@
+.taskCalendar{
+    color: #333333;
+}
+
+.calendar-container{
+  background: #FFFFFF;
+}
+
+.taskMk{
+    background: #FFFFFF;
+    display: inline-block;
+    .name{
+        border-bottom: 1px solid #eaeaea;
+        line-height: 2rem;
+        display: inline-block;
+        width: 100%;
+        font-size: 1rem;
+        color: #ff7480;
+        padding-bottom: 0.4rem;
+        .edit{
+            color:#ff7480;
+            border: 1px solid #ff7480;
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            line-height: 1rem;
+            border-radius: 3px;
+            margin-top: 0.2rem;
+            font-size: 0.8rem;
+            text-decoration:none; 
+        }
+    }
+    .headCon{
+        display:inline-block;
+        width: 100%;
+        padding: 0.6rem 0;
+        .z_s{
+            display: inline-block;
+            width: 100%;
+            line-height: 2rem;
+        }
+        .hCon{
+            width: 8%;
+            .tit{
+                color: #ff7480;
+                font-size: 1rem;
+            }
+        }
+        .rwCon{
+            width: 90%;
+            .xqrw{
+                border-top: 1px solid #eaeaea;
+                display: inline-block;
+                width: 100%;
+                padding-top: 0.5rem;
+                margin-top: 0.3rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+}

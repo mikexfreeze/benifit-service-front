@@ -1,0 +1,135 @@
+.date_sel {
+    position: relative;
+    .el-input__inner {
+        height: auto;
+        border: 0;
+        text-align: right;
+        width: 100%;
+        font-size: 0.8rem;
+        line-height: auto;
+        padding: 0;
+        padding-right: 1.5rem;
+        color: #333333;
+    }
+    .el-input__prefix {}
+    .el-icon-time:before {
+        display: none;
+    }
+    .el-input__icon {
+        line-height: none;
+    }
+    .el-input__suffix {
+        right: 0;
+    }
+    .el-date-editor.el-input{
+        width: auto;
+    }
+    input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:#999999;
+    }
+    input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color:#999999;
+    }
+    input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color:#999999;
+    }
+    input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:#999999;
+    }
+    input::input-placeholder{
+        color: #999999;
+    }
+}
+
+.time-input{
+  border: none;
+}
+
+.date_sel:before {
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 1px solid #999999;
+    border-right: 1px solid #999999;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    right: 0.8rem;
+    position: absolute;
+    z-index: 1;
+    top: 0.3rem;
+}
+
+.el-input__inner {
+        border: 0;
+        height: auto;
+        color: #333333;
+        font-size: 1rem;
+        line-height: normal;
+        padding: 0;
+    }
+    .el-icon-arrow-up:before {
+        display: none;
+    }
+
+
+.fillIn{
+    .el-input--suffix .el-input__inner{
+        text-align: right;
+        padding-right: 1.5rem;
+        font-size: 0.8rem;
+    }
+    input::-webkit-input-placeholder {
+        /* WebKit, Blink, Edge */
+        color: #999999;
+        font-size: 0.8rem;
+    }
+    input:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #999999;
+        font-size: 0.8rem;
+    }
+    input::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #999999;
+        font-size: 0.8rem;
+    }
+    input:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #999999;
+        font-size: 0.8rem;
+    }
+    input::input-placeholder {
+        color: #999999;
+        font-size: 0.8rem;
+    }
+
+    .el-button{
+        height: auto;
+        border: 0;
+        text-align: right;
+        width: 100%;
+        line-height: auto;
+        padding: 0;
+        padding-right: 1.5rem;
+        color: #333333;
+        line-height: 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:#999999;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#999999;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#999999;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:#999999;
+}
+input::input-placeholder{
+    color: #999999;
+}

@@ -1,0 +1,53 @@
+.storeList{
+    .search{
+        background: #FFFFFF;
+        padding: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+        border-bottom-right-radius: 0.8rem;
+        .t_search{
+            border: 1px solid #eaeaea;
+            border-radius: 0.4rem;
+            width: 100%;
+            width: 100%;
+        }
+        .i_search{
+            background: #FFFFFF;
+            border: 0;
+            width: 70%;
+            padding: 0.6rem 0.4rem;
+            border-radius: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .look{
+            color: #ff7480;
+            float: right;
+            margin-top: 0.38rem;
+            margin-right: 0.6rem;
+            font-size: 1.2rem;
+        }
+    }
+    .outer_l{
+        margin: 0.8rem;
+        border: 1px solid #fdc7d1;
+        border-radius: 0.4rem;
+        background: rgba(255,255,255,0.5);
+        margin-bottom: 3rem;
+        .list{
+            margin: 0.8rem;
+            
+            background: #fff;
+            border-radius: 0.4rem;
+            padding: 0.5rem;
+            .lie{
+                display: inline-block;
+                width: 100%;
+                font-size: 0.8rem;
+                padding: 0.8rem 0;
+                border-bottom: 1px solid #eaeaea;
+            }
+            .lie:last-child{
+                border-bottom: 0;
+            }
+        }
+    }
+}

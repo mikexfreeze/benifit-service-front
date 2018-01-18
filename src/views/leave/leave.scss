@@ -1,0 +1,53 @@
+.leaveHead{ 
+    background: #FFFFFF; 
+    .title{
+        padding: 0.5rem 0 0.1rem; 
+        width: 100%; 
+        .tit{ 
+            padding: 0.5rem; 
+            display: inline-block; 
+        } 
+    } 
+    .fillIn{ 
+        padding: 0.5rem; 
+        border-top: 3px solid #fcafc3;
+        background: #fff7f9;
+        .mytarea{ 
+            min-height: 4rem; 
+            width: 100%; 
+            border: 0; 
+            background: none; 
+            resize: none; 
+        } 
+    } 
+} 
+.f_list{ 
+    display: inline-block; 
+    width: 97%; 
+    background: #FFFFFF;
+    padding-left: 3%; 
+    .list{ 
+        width: 100%; 
+        display: inline-block; 
+        padding: 1rem 0 0.5rem; 
+        border-bottom: 1px solid #eaeaea; 
+        .fR{ 
+            padding-right: 0.5rem; 
+            .select{ 
+                width: 100%; 
+                border: 0; 
+            } 
+        } 
+    } 
+    .list:last-child{ 
+        border-bottom: 0; 
+    } 
+} 
+
+.taskBtn{
+    text-align: center;
+    margin-bottom: 3rem;
+    display: inline-block;
+    width: 100%;
+}
+

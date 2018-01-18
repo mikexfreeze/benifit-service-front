@@ -1,0 +1,79 @@
+.taskMk{
+    background: #FFFFFF;
+    display: inline-block;
+    padding: 0.8rem;
+    width: 100%;
+    .name{
+        border-bottom: 1px solid #eaeaea;
+        line-height: 2.4rem;
+        display: inline-block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding-bottom: 0.3rem;
+    }
+    .headCon{
+        display:inline-block;
+        width: 100%;
+        padding: 0.6rem 0 0;
+        .z_s{
+            display: inline-block;
+            width: 100%;
+            line-height: 2rem;
+        }
+        .hCon{
+            width: 8%;
+            .tit{
+                color: #ff7480;
+                font-size: 1.4rem;
+            }
+        }
+        .rwCon{
+            width: 91%;
+            .xqrw{
+                border-top: 1px solid #eaeaea;
+                display: inline-block;
+                width: 100%;
+                padding-top: 0.5rem;
+                margin-top: 0.3rem;
+                line-height: 1.4rem;
+            }
+        }
+    }
+}
+.showSign{
+    margin: 1rem 3%;
+    .title{
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        .pink{
+            font-size: 1.4rem;
+        }
+        .t_zi{
+            font-size: 1.1rem;
+        }
+    }
+    .showCon{
+        background: #FFFFFF;
+        padding: 0.8rem 0.5rem;
+        .text{
+            display: inline-block;
+            line-height: 1.8rem;
+        }
+    }
+}
+
+.taskBtn{
+    display: inline-block;
+    padding: 1rem 3%;
+    text-align: center;
+    width: 94%;
+    .btn{
+        background:#ff7480;
+        width: 45%;
+        border-radius:3px;
+        display: inline-block;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0.5rem 0;
+    }
+}

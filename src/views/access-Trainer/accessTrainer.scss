@@ -1,0 +1,124 @@
+.accessShop{
+    .titAll{
+        text-align: center;
+        padding:0.1rem;
+        background: #fbc0bc;
+        margin: 0.8rem;
+        border-radius: 2.5rem;
+        .tit_b{
+            border: 1px solid #ff7b86;
+            margin: 0.5rem;
+            border-radius: 2.5rem;
+            padding:0.5rem;
+            .tit{
+                display: inline-block;
+                width: 100%;
+            }
+            .tit1{
+                color: #666666;
+                padding-bottom: 0.2rem;
+            }
+            .tit2{
+                color: #ff7480;
+                font-size: 1.1rem;
+            }
+        }
+        
+    }
+    .title{
+            color: #ff7480;
+            background: #d7f2ec;
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 0.6rem 0 0.5rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+        }
+    .block{
+        background: #FFFFFF;
+        
+        .title1{
+            border-bottom: 1px solid #eaeaea;
+            text-align: center;
+            display: inline-block;
+            padding: 1rem 0;
+            width: 100%;
+            span{
+                font-size: 1rem;
+                color: #ff7480;
+                background: #fdf3eb;
+                display: inline-block;
+                padding: 0.3rem 0.6rem 0.2rem;
+                text-align: center;
+            }
+        }
+        .tit{
+            display: inline-block;
+            width: 100%;
+            margin: 0.8rem 0 0.6rem;
+        }
+        .fillIn{
+            border: 1px solid #eaeaea;
+            padding: 0.4rem 0.3rem;
+            margin: 0 0 0.2rem;
+            .textarea{
+                min-height: 4rem;
+                width: 100%;
+                border: 0;
+                background: none;
+                resize: none;
+            }
+            .select{
+                width: 100%;
+                border: 0;
+            }
+        }
+        .theRadio{
+            display: inline-block;
+            width: 100%;
+            padding: 1rem 0;
+            border-bottom: 1px solid #eaeaea;
+            .fR{
+                margin-top: 0.3rem;
+                margin-right: 0.5rem;
+            }
+        }
+        .moreChose{
+            .tit{
+                display: inline-block;
+                background: #ffe4e6;
+                padding: 0.5rem 0;
+                span{
+                    display: inline-block;
+                    padding: 0 0.5rem;
+                    font-size: 1rem;
+                }
+            }
+            .lieall{
+                display: inline-block;
+                width: 100%;
+                .lie{
+                    display: inline-block;
+                    width: 100%;
+                    padding: 0.5rem 0 1rem;
+                }
+            }
+        }
+        .line{
+            height: 1px;
+            border-bottom: 1px solid #eaeaea;
+            margin: 1.5rem 0 0;
+        }
+    }
+    .btnSubmit{
+        text-align: center;
+        margin: 2rem 0 6rem;
+        .btn{
+            background: #fa3468;
+            font-size: 1.2rem;
+            padding: 0.5rem 20%;
+            border-radius: 3px;
+            color: #FFFFFF;
+        }
+    }
+}
