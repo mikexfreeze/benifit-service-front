@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/views/HelloWorld'
-import userCenter from '@/views/userCenter/userCenter.vue'
-import userCenterList from '@/views/userCenterList/userCenterList.vue'
-import userTel from '@/views/userTel/userTel.vue'
-import couponTab from '@/views/couponTab/couponTab.vue'
-import memberInfo from '@/views/memberInfo/memberInfo.vue'
+import userCenter from '@/views/user-center/userCenter.vue'
+import memberIcon from '@/views/user-center/member-nav/memberNav'
+import cardDetail from '@/views/user-center/card-detail/cardDetail.vue'
+import userCenterList from '@/views/user-center-list/userCenterList.vue'
+import userTel from '@/views/user-tel/userTel.vue'
+import couponTab from '@/views/coupon-tab/couponTab.vue'
+import memberInfo from '@/views/member-info/memberInfo.vue'
 
 Vue.use(Router)
 
@@ -17,27 +19,32 @@ const router = new Router({
       component: HelloWorld
     },
     {
-      path: '/userCenter',
+      path: '/user-center',
       name: '个人中心',
-      component: userCenter
+      component: userCenter,
+      redirect: '/user-center/nav',
+      children: [
+        {component: memberIcon, path: 'nav'},
+        {path: 'list', component: cardDetail}
+      ]
     },
     {
-      path: '/userCenterList',
+      path: '/user-center-list',
       name: '个人中心列表',
       component: userCenterList
     },
     {
-      path: '/userTel',
+      path: '/user-tel',
       name: 'userTel',
       component: userTel
     },
     {
-      path: '/couponTab',
+      path: '/coupon-tab',
       name: 'Tab',
       component: couponTab
     },
     {
-      path: '/memberInfo',
+      path: '/member-info',
       name: '注册会员',
       component: memberInfo
     }

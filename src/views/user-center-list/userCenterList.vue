@@ -68,7 +68,7 @@
             <div class="small-bg"></div>
             <a href="#" class="LookMore"></a>
             </div>
-             <div class="listCoupon">
+            <div class="listCoupon">
                 <div class="Coupon Jdetail">
                  </div>
                     <div class="ListInfo">
@@ -93,7 +93,7 @@
 </template>
 <script>
    export default {
-       
+
   }
 </script>
 

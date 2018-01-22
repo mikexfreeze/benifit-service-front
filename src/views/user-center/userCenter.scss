@@ -1,7 +1,4 @@
-.bg{
-    width: 100%;
-    height: 100%;
-}
+
 .mainCenter{
     padding:0 0.34rem;
     width: 100%;
@@ -153,51 +150,7 @@
                 }
             }
         }
-        .MenberIcon{
-            display: flex;
-            justify-content: space-evenly;
-            margin-top: 0.39rem;
-            li{
-                flex: 1;
-                text-decoration: none;
-                list-style: none;
-                a{
-                    display: inline-block;
-                    margin-left: 23px;
-                }
-                .icon1{
-                    width: 1.7rem;
-                    height: 1.76rem;
-                    background: url(../../assets/img/new/member-detail.png) no-repeat;
-                    background-size: contain;
-                }
-                .icon2{
-                    width: 1.7rem;
-                    height: 1.76rem;
-                    background: url(../../assets/img/new/cardcenter.png) no-repeat;
-                    background-size: contain;
-                }
-                .icon3{
-                    width: 1.7rem;
-                    height: 1.76rem;
-                    background: url(../../assets/img/new/member.png) no-repeat;
-                    background-size: contain;
-                }
-                p{
-                    color: #000;
-                    font-size: 0.24rem;
-                    padding:0;
-                    margin:0;
-                    text-align: center;
-                    margin-top:0.37rem;
-                }
-               
-            }
-            li:last-child{
-                margin-right: 0;
-            }
 
-        }
     }
 }
 .footer{
@@ -205,6 +158,4 @@
     height: 1.58rem;
     background: url(../../assets/img/new/arrow-bg@2x.png) no-repeat;
     background-size: 100% 100%;
-    position: absolute;
-    bottom: 1.3rem;
 }
