@@ -4,7 +4,6 @@ import HelloWorld from '@/views/HelloWorld'
 import userCenter from '@/views/user-center/userCenter.vue'
 import memberIcon from '@/views/user-center/member-nav/memberNav'
 import cardDetail from '@/views/user-center/card-detail/cardDetail.vue'
-import userCenterList from '@/views/user-center-list/userCenterList.vue'
 import userTel from '@/views/user-tel/userTel.vue'
 import couponTab from '@/views/coupon-tab/couponTab.vue'
 import memberInfo from '@/views/member-info/memberInfo.vue'
@@ -27,11 +26,6 @@ const router = new Router({
         {component: memberIcon, path: 'nav'},
         {path: 'list', component: cardDetail}
       ]
-    },
-    {
-      path: '/user-center-list',
-      name: '个人中心列表',
-      component: userCenterList
     },
     {
       path: '/user-tel',
