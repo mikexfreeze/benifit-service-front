@@ -1,7 +1,7 @@
 <template>
   <div class="hello" style="padding-left: 20px;">
     <div v-for="route in routes">
-      <router-link :to="{name:route.name}"><p>{{route.name}}</p></router-link>
+      <router-link :to="{name:route.name}" class="router-link"><p>{{route.name}}</p></router-link>
     </div>
 
   </div>
@@ -26,6 +26,12 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+  .hello{
+    padding: 20px;
+    .router-link{
+      font-size: 1rem;
+    }
+  }
   h1, h2 {
     font-weight: normal;
   }
