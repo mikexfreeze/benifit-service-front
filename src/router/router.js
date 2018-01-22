@@ -23,7 +23,7 @@ const router = new Router({
       component: userCenter,
       redirect: '/user-center/nav',
       children: [
-        {component: memberIcon, path: 'nav'},
+        {path: 'nav', component: memberIcon},
         {path: 'list', component: cardDetail}
       ]
     },
