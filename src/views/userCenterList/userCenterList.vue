@@ -1,92 +1,90 @@
 <template>
     <div class="bg">
         <div class="mainCenter">
-        <div class="head">
-            <span class="name">亲爱的蓉蓉</span>
-            <span class="edit"><i class=""></i>修改个人资料</span>
-        </div>
+            <div class="head">
+                <p class="name">亲爱的&nbsp;&nbsp;<i>蓉蓉</i></p>
+                <p class="edit"><i class=""></i><em>修改个人资料</em></p>
+             </div>
         <div class="center">
             <div class="Img"><img src="../../assets/img/mm.jpg" alt=""></div>
-            <div class="tag">会员卡详情</div>
-            <div class="Card"><img src="../../assets/img/center-bg@2x.png" alt=""></div>
-            <p class="CradNum">会员卡号：984745545</p>
-            <div class="CardFlex">
-                <div class="PinkCrad">
-                    <span>粉卡</span>
-                    <p>
-                        当前<br>
-                        会员等级
-                    </p>
-                </div>
-                <div class="PinkCrad">
-                    <span>200</span>
-                    <p>
-                        当前<br>
-                       可用积分
-                    </p>
-                </div>
-               <div class="PinkCrad">
-                    <span>800</span>
-                    <p>
-                        距离金卡<br>
-                        所需积分
-                    </p>
-                </div>
-            </div>
-            <div class="listCoupon">
-                <div class="Coupon">
-                    <div id="TabTicket" class="ticket">
-                        <i class="IconCoupon"></i>
-                          <h2>优惠券</h2>
-                          <i class="DownArrow"></i>
-                    </div>
-                </div>
-                 <div class="ticketList">
-                    <img src="../../assets/img/Servicecoupons@2x.png" alt="">
-                    <div class="txt">
-                        <div class="TopTxt">
-                            <h3>Benefit 服务券</h3>
-                            <a href="#">立即使用</a>
-                        </div>    
-                        <p class="Time">2018.1.9</p>
-                    </div>
-                </div>
-                 <div class="ticketList">
-                    <img src="../../assets/img/Servicecoupons@2x.png" alt="">
-                    <div class="txt">
-                        <div class="TopTxt">
-                            <h3>Benefit 服务券</h3>
-                            <a href="#">立即使用</a>
-                        </div>    
-                        <p class="Time">2018.1.9</p>
-                    </div>
-                </div>
-            </div>
-             <div class="listCoupon">
-                <div class="Coupon">
-                    <div class="CouponList">
-                        <div class="ticket">
-                            <i class="IconCoupon IconList"></i>
-                            <h2>积分明细</h2>
-                            <i class="DownArrow"></i>
+            <div class="tag"></div>
+            <div class="Card">
+                    <img src="../../assets/img/new/vip.png" alt="">
+                    <div class="cardTime">
+                        <div class="cardNum">
+                            <p>会员卡号</p>
+                            <p>845958-866</p>
+                        </div>
+                        <div class="lastTime">
+                            <p>会员卡有效期</p>
+                            <p>2018.12.10</p>
                         </div>
                     </div>
+                </div>
+                <div class="CardFlex">
+                        <div class="PinkCrad">
+                            <span>粉卡</span>
+                            <p class="p1">
+                                <img src="../../assets/img/new/text1.png" alt="">
+                            </p>
+                        </div>
+                        <div class="PinkCrad">
+                            <span>200</span>
+                            <p class="p2">
+                                <img src="../../assets/img/new/text2.png" alt="">
+                            </p>
+                        </div>
+                       <div class="PinkCrad">
+                            <span>800</span>
+                            <p class="p3">
+                                <img src="../../assets/img/new/text3.png" alt="">
+                            </p>
+                        </div>
+                    </div>
+            <div class="listCoupon mb">
+                <div class="Coupon"></div>      
+                 <div class="ticketList">
+                    <img src="../../assets/img/new/couponbg.png" alt="">
+                    <div class="txt">
+                        <div class="TopTxt">
+                            <h3>Benefit 服务券</h3>
+                            <p class="Time">2017/11/01-2017/11/30</p>
+                            <p class="store">*仅限XXXX门店使用</p>
+                        </div>  
+                        <a class="btn" href="#"></a>        
+                    </div>
+                </div>
+                <div class="ticketList">
+                        <img src="../../assets/img/new/couponbg.png" alt="">
+                        <div class="txt">
+                            <div class="TopTxt">
+                                <h3>Benefit 服务券</h3>
+                                <p class="Time">2017/11/01-2017/11/30</p>
+                                <p class="store">*仅限XXXX门店使用</p>
+                            </div>  
+                            <a class="btn" href="#"></a>        
+                        </div>
+                    </div>
+            <div class="small-bg"></div>
+            <a href="#" class="LookMore"></a>
+            </div>
+             <div class="listCoupon">
+                <div class="Coupon Jdetail">
                  </div>
                     <div class="ListInfo">
                         <div class="ListInfoHead">
-                            <span class="w17">日期</span>
-                            <span class="w40">来源</span>
-                            <span class="w20">积分明细</span>
+                            <span class="w25">获取日期</span>
+                            <span class="w15">积分</span>
+                            <span class="w25">有效期至</span>
+                            <span class="w25">获取途径</span>
                         </div>
                         <ul class="orderMainInfo">
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
-                            <li><span class="w17">2018.1.9</span><span class="w40">线上</span><span class="w20">20</span></li>
+                            <li><span class="w25">2018/1/1</span><span class="w15">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
+                            <li><span class="w25">2018/1/1</span><span class="w15">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
                         </ul>
                     </div>
+                    <a href="#" class="LookDetail"></a>
+                    <div class="snow"></div>
             </div>
         </div>
     </div>

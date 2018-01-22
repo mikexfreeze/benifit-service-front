@@ -2,45 +2,53 @@
     <div class="bg">
      <div class="mainCenter">
         <div class="head">
-            <span class="name">亲爱的蓉蓉</span>
-            <span class="edit"><i class=""></i>修改个人资料</span>
+            <span class="name">亲爱的&nbsp;&nbsp;<i>蓉蓉</i></span>
+            <span class="edit"><i class=""></i><em>修改个人资料</em></span>
         </div>
         <div class="center">
             <div class="Img"><img src="../../assets/img/mm.jpg" alt=""></div>
-            <div class="tag">会员卡详情</div>
-            <div class="Card"><img src="../../assets/img/center-bg@2x.png" alt=""></div>
-            <p class="CradNum">会员卡号：984745545</p>
+            <div class="tag"></div>
+            <div class="Card">
+                <img src="../../assets/img/new/vip.png" alt="">
+                <div class="cardTime">
+                    <div class="cardNum">
+                        <p>会员卡号</p>
+                        <p>845958-866</p>
+                    </div>
+                    <div class="lastTime">
+                        <p>会员卡有效期</p>
+                        <p>2018.12.10</p>
+                    </div>
+                </div>
+            </div>
             <div class="CardFlex">
                 <div class="PinkCrad">
                     <span>粉卡</span>
-                    <p>
-                        当前<br>
-                        会员等级
+                    <p class="p1">
+                        <img src="../../assets/img/new/text1.png" alt="">
                     </p>
                 </div>
                 <div class="PinkCrad">
                     <span>200</span>
-                    <p>
-                        当前<br>
-                       可用积分
+                    <p class="p2">
+                        <img src="../../assets/img/new/text2.png" alt="">
                     </p>
                 </div>
                <div class="PinkCrad">
                     <span>800</span>
-                    <p>
-                        距离金卡<br>
-                        所需积分
+                    <p class="p3">
+                        <img src="../../assets/img/new/text3.png" alt="">
                     </p>
                 </div>
             </div>
             <div class="MenberIcon">
-                <li><a href="#" class="icon icon1"></a><p class="ml5">会员卡详情</p></li>
-                <li><a href="#" class="icon icon2"></a><p class="ml5">卡券中心</p></li>  
-                <li><a href="#" class="icon icon3"></a><p class="ml5">会员中心</p></li>                
+                <li><a href="#" class="icon icon1"></a></li>
+                <li><a href="#" class="icon icon2"></a></li>  
+                <li><a href="#" class="icon icon3"></a></li>                
             </div>
         </div>
     </div>
-    <div class="footer"><img src="../../assets/img/footer-crile.png" alt=""></div>
+    <div class="footer"></div>
     </div>
 </template>
 <script src="./userCenter.js"></script>
