@@ -33,18 +33,19 @@
             <div class="ListInfo">
                 <div class="ListInfoHead">
                     <span class="w25">获取日期</span>
-                    <span class="w15">积分</span>
+                    <span class="w18">积分</span>
                     <span class="w25">有效期至</span>
                     <span class="w25">获取途径</span>
                 </div>
                 <ul class="orderMainInfo">
-                    <li><span class="w25">2018/1/1</span><span class="w15">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
-                    <li><span class="w25">2018/1/1</span><span class="w15">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
+                    <li><span class="w25">2018/1/1</span><span class="w18">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
+                    <li><span class="w25">2018/1/1</span><span class="w18">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
                 </ul>
             </div>
             <a href="#" class="LookDetail"></a>
             <div class="snow"></div>
         </div>
+         <div class="car"></div>
     </div>
 </template>
 

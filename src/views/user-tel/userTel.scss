@@ -11,26 +11,22 @@ input{
 .bg{
     width: 100%;
     height: 100%;
-    position: absolute;
-    background:url(../../assets/img/big-bg@2x.png) no-repeat;
-    background-size: 100% 100%;
     .Top{
-        width: 100%;
-        height: 1.1rem;
-        background: url(../../assets/img/benefit@2x.png) no-repeat;
+        width: 50%;
+        height: 1.75rem;
+        background: url(../../assets/img/ios/bindTopMM@2x.png) no-repeat;
         background-size: 100% 100%;
+        margin: 0 auto;
+        margin-top: 1.07rem;
     }
     .Main{
-        width: 100%;
-        height: 3.47rem;
-        background: url(../../assets/img/form@2x.png) no-repeat;
+        width: 6.52rem;
+        height: 2.92rem;
+        background: url(../../assets/img/ios/tel-bg@2x.png) no-repeat;
         background-size: 100% 100%;
         margin:0 auto;
-        padding: 1.02rem;
-        margin:0 14px;
-        margin: 0 auto;
-        margin-top: 1.7rem;
-        box-sizing: border-box;
+        margin-top: 0.2rem;
+        padding:0.78rem 0.5rem 0.65rem 0.5rem;
         .MainInfo{
             width: 100%;
             margin: 0 auto;
@@ -40,21 +36,22 @@ input{
                 margin-top: 16px;
                 position: relative;
                 .tel{
-                    width: 12px;
-                    height: 17px;
-                    background: url(../../assets/img/tel@2x.png) no-repeat;
+                    width: 0.26rem;
+                    height: 0.35rem;
+                    background: url(../../assets/img/ios/tel@2x.png) no-repeat;
                     background-size: 100% 100%;
                     display: inline-block;
                 }
                 .pass{
-                    width: 12px;
-                    height: 17px;
+                    width: 0.24rem;
+                    height: 0.37rem;
                     background: url(../../assets/img/pass@2x.png) no-repeat;
                     background-size: 100% 100%;
                     display: inline-block
                 }
                 span{
-                    color: #ff727e;
+                    color: #535353;
+                    font-weight: bold;
                     font-size: 0.3rem;
                     width: 28%;
                     text-align: left;
@@ -70,17 +67,14 @@ input{
                 }
                 button{
                     width: 1.45rem;
-                    height: 0.44rem;
-                    background: #ff7380;
-                    color: #ffffff;
-                    line-height: 0.44rem;
-                    border-radius: 3px;
-                    border: none;
+                    height: 0.43rem;
+                    background: url(../../assets/img/ios/yzm@2x.png) no-repeat;
+                    background-size: 100% 100%;    
+                    border:none;               
                     display: inline-block;
                     position: absolute;
                     right: 0;
-                    bottom: 0.2rem;
-                    font-size: 0.24rem;
+                    bottom: 0.1rem;
                 
                 }
             }
@@ -89,19 +83,37 @@ input{
             }
         }
     }
+    .bgArrow{
+        width: 1.8rem;
+        height: 0.98rem;
+        background: url(../../assets/img/ios/tel-arrow@2x.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 11px;
+    }
+    .mmCar{
+        width: 2.36rem;
+        height: 0.91rem;
+        background:url(../../assets/img/ios/small-car@2x.png) no-repeat;
+        background-size: 100% 100%;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 82%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+
+    }
     .Submit{
-        width: 6.7rem;
-        height: 0.96rem;
-        background: #ff727e;
-        color: #ffffff;
-        text-align: center;
+        width: 2.04rem;
+        height: 0.78rem;
+        background: url(../../assets/img/ios/submit@2x.png) no-repeat;
+        background-size: 100% 100%;
         margin:0 auto;
         border:none;
         display: block;
-        font-size: 18px;
-        border-radius: 9px;
         position: absolute;
-        bottom: 10px;
+        bottom: 0.54rem;
         left: 0;
         right: 0;
     }
