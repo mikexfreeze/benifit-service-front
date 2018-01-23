@@ -7,6 +7,7 @@ import cardDetail from '@/views/user-center/card-detail/cardDetail.vue'
 import userTel from '@/views/user-tel/userTel.vue'
 import couponTab from '@/views/coupon-tab/couponTab.vue'
 import memberInfo from '@/views/member-info/memberInfo.vue'
+import barCode from '@/views/bar-code/barCode.vue'
 
 Vue.use(Router)
 
@@ -41,7 +42,12 @@ const router = new Router({
       path: '/member-info',
       name: '注册会员',
       component: memberInfo
-    }
+    },
+    {
+      path: '/bar-code',
+      name: '会员条形码',
+      component: barCode
+    },
   ]
 })
 
