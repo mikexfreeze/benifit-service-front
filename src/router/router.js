@@ -27,7 +27,7 @@ const router = new Router({
       redirect: '/user-center/nav',
       children: [
         {path: 'nav', component: memberIcon},
-        {path: 'list', component: cardDetail} 
+        {path: 'list', component: cardDetail}
       ]
     },
     {
@@ -51,12 +51,13 @@ const router = new Router({
       component: barCode
     },
     {
-       path:'/detail',
-       component:cardList
+      path: '/detail',
+      name: '会员积分',
+      component: cardList
     },
     {
-       path:'/member',
-       component:memberVip
+      path: '/member',
+      component: memberVip
     }
   ]
 })
