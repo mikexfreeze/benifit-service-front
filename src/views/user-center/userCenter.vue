@@ -1,5 +1,5 @@
 <template>
-    <div class="mainContainer">
+    <div class="mainContainer" style="position:relative;">
         <div class="mainCenter">
             <div class="head">
                 <span class="name">亲爱的&nbsp;&nbsp;<i>蓉蓉</i></span>
@@ -45,6 +45,7 @@
 
             </div>
         </div>
+        <div class="car" v-show="$route.path === '/user-center/list'"></div>
         <div class="footer" v-show="$route.path === '/user-center/nav'"></div>
     </div>
 </template>
