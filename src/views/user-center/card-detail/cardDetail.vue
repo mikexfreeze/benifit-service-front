@@ -42,7 +42,7 @@
                     <li><span class="w25">2018/1/1</span><span class="w18">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
                 </ul>
             </div>
-            <a href="#" class="LookDetail"></a>
+            <router-link to="/detail" class="LookDetail"></router-link>
             <div class="snow"></div>
         </div>
          <div class="car"></div>

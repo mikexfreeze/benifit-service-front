@@ -1,3 +1,35 @@
+.List{
+    width: 100%;
+    height: 100%;
+    background: url(~@/assets/img/listBGNEW.png) no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: -9999;
+    .Tab{
+        display: flex;
+        align-content: center;
+        width: 100%;
+        height: 0.8rem;
+        background: #ffffff;
+        padding:0 0.21rem;
+        box-sizing: border-box;
+        line-height: 0.8rem;
+        div{
+            flex: 1;
+            text-align: center;
+            color: #959595;
+            position: relative;
+            font-size: 0.3rem;
+        }
+
+        .active{
+            width: 100%;
+            height: 100%;
+            color: #fb3468;
+            border-bottom: 1px solid #fb3468;
+            
+        }
+    }
 .w25{
     width: 25%;
 }
@@ -10,13 +42,9 @@
     }
     margin-top: 0.4rem;
     padding-bottom: 0.64rem;
-    .Coupon{
-        width: 4.43rem;
-        height: 0.82rem;
-        background: url(~@/assets/img/new/coupon-tag@2x.png) no-repeat;
-        background-size: 100% 100%;
-        margin: 0 auto;
-    }
+    width: 100%;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
     .ticketList{
         position: relative;
         margin-top: -9px;
@@ -109,6 +137,7 @@
             padding:0;
             margin:0;
             padding: 0 8px;
+            min-height: 6rem;
             li{
                 width: 100%;
                 height: 0.66rem;
@@ -130,21 +159,5 @@
             }
         }
     }
-    .LookDetail{
-        width: 2.03rem;
-        height: 0.74rem;
-        background: url(~@/assets/img/new/btn-detail.png) no-repeat;
-        background-size: 100% 100%;
-        display: block;
-        margin: 0 auto;
-        margin-top: 0.31rem;
-        margin-bottom: 0.7rem;
-    }
-    .snow{
-        width: 1.49rem;
-        height: 0.87rem;
-        background: url(~@/assets/img/new/snow@2x.png) no-repeat;
-        background-size: 100% 100%;
-    }
 }
-
+}

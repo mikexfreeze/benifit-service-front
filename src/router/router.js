@@ -8,6 +8,8 @@ import userTel from '@/views/user-tel/userTel.vue'
 import couponTab from '@/views/coupon-tab/couponTab.vue'
 import memberInfo from '@/views/member-info/memberInfo.vue'
 import barCode from '@/views/bar-code/barCode.vue'
+import cardList from '@/views/user-center/card-List/cardList.vue'
+import memberVip from '@/views/user-center/member-vip/memberVip.vue'
 
 Vue.use(Router)
 
@@ -25,17 +27,17 @@ const router = new Router({
       redirect: '/user-center/nav',
       children: [
         {path: 'nav', component: memberIcon},
-        {path: 'list', component: cardDetail}
+        {path: 'list', component: cardDetail} 
       ]
     },
     {
       path: '/user-tel',
-      name: 'userTel',
+      name: '绑定页面',
       component: userTel
     },
     {
       path: '/coupon-tab',
-      name: 'Tab',
+      name: '优惠券',
       component: couponTab
     },
     {
@@ -48,6 +50,14 @@ const router = new Router({
       name: '会员条形码',
       component: barCode
     },
+    {
+       path:'/detail',
+       component:cardList
+    },
+    {
+       path:'/member',
+       component:memberVip
+    }
   ]
 })
 
