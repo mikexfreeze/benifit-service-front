@@ -10,6 +10,8 @@
                 <div class="tag"></div>
                 <div class="Card">
                     <img src="../../assets/img/new/vip.png" alt="">
+                    <!--<img src="../../assets/img/new/Silver-card/Silver-card.png" alt="">-->
+                    <!--<img src="../../assets/img/new/Gold-card/Gold-card.png" alt="">-->
                     <div class="cardTime">
                         <div class="cardNum">
                             <p>会员卡号</p>
