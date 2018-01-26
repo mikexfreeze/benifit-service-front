@@ -10,6 +10,9 @@ import memberInfo from '@/views/member-info/memberInfo.vue'
 import barCode from '@/views/bar-code/barCode.vue'
 import cardList from '@/views/user-center/card-List/cardList.vue'
 import memberVip from '@/views/user-center/member-vip/memberVip.vue'
+const pinkCard = () => import('@/views/user-center/member-vip/pink-card/pinkCard.vue')
+const silverCard = () => import('@/views/user-center/member-vip/silver-card/silverCard.vue')
+const goldCard = () => import('@/views/user-center/member-vip/gold-card/goldCard.vue')
 
 Vue.use(Router)
 
@@ -57,7 +60,14 @@ const router = new Router({
     },
     {
       path: '/member',
-      component: memberVip
+      name: '会员权益',
+      component: memberVip,
+      redirect: '/member/pink-card',
+      children: [
+        {path: 'pink-card', component: pinkCard, name: 'pink'},
+        {path: 'silver-card', component: silverCard, name: 'silver'},
+        {path: 'gold-card', component: goldCard, name: 'gold'},
+      ]
     }
   ]
 })
