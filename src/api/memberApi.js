@@ -18,3 +18,21 @@ export function GetReportList (argParams) {
     return response
   })
 }
+
+export function GetMemberBonus (argParams) {
+  let params = {
+    openId: localStorage.getItem('openId') || 'open_id1',
+    account: process.env.WC_ACCOUNT,
+    bonusPointType: 'ALL',
+  }
+  params = $.extend(params, argParams)
+  return fetch({
+    url: '/member-center/api/member-bonus-point-histories',
+    method: 'get',
+    params: params,
+  }).then(function (response) {
+    console.log('获取会员积分')
+    console.log(response)
+    return response
+  })
+}

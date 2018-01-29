@@ -8,7 +8,7 @@ import userTel from '@/views/user-tel/userTel.vue'
 import couponTab from '@/views/coupon-tab/couponTab.vue'
 import memberInfo from '@/views/member-info/memberInfo.vue'
 import barCode from '@/views/bar-code/barCode.vue'
-import cardList from '@/views/user-center/card-List/cardList.vue'
+import memberBonus from '@/views/user-center/member-bonus/memberBonus.vue'
 import memberVip from '@/views/user-center/member-vip/memberVip.vue'
 const pinkCard = () => import('@/views/user-center/member-vip/pink-card/pinkCard.vue')
 const silverCard = () => import('@/views/user-center/member-vip/silver-card/silverCard.vue')
@@ -54,9 +54,9 @@ const router = new Router({
       component: barCode
     },
     {
-      path: '/detail',
+      path: '/member-bonus',
       name: '会员积分',
-      component: cardList
+      component: memberBonus
     },
     {
       path: '/member',

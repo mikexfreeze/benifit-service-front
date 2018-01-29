@@ -14,11 +14,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router/router'
 import ElementUI from 'element-ui'
-// import { AlertPlugin, ToastPlugin } from 'vux'
 import store from '@/store/store'
-
-// Vue.use(AlertPlugin)
-// Vue.use(ToastPlugin)
 
 Vue.use(ElementUI)
 Vue.use(require('vue-moment'));
