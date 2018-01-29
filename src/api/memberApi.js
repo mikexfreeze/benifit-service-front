@@ -22,7 +22,7 @@ export function GetReportList (argParams) {
 export function GetMemberBonus (argParams) {
   let params = {
     openId: localStorage.getItem('openId') || 'open_id1',
-    account: 'gh_da5328b0dc70',
+    account: process.env.WC_ACCOUNT,
     bonusPointType: 'ALL',
   }
   params = $.extend(params, argParams)
