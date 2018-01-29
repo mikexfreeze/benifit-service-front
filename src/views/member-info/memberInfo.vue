@@ -7,9 +7,33 @@
                 <div class="MainInfo">
                     <li><i class="name"></i><span><em class="c-logoColor">*</em>姓名</span><input v-model="temp.name" type="tel"></li>
                     <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input  v-model="temp.mobile"  type="tel"></li>
-                    <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input type="tel"></li>
+                    <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input   v-model="temp.birth"  type="date"></li>
                     <li><i class="sex"></i><span><em class="c-logoColor">*</em>性别</span><el-radio v-model="temp.title" label="MS">女士</el-radio><el-radio v-model="temp.title" label="MR">先生</el-radio></li>
-                    <li><i class="city"></i><span><em class="c-logoColor">*</em>省市区</span><input type="tel"></li>
+                    <li><i class="city"></i><span><em class="c-logoColor">*</em>省市区</span>
+                      <el-select v-model="temp.provinceId" @change="provinceChange" placeholder="请选择省">
+                        <el-option
+                          v-for="item in provinceList"
+                          :key="item.id"
+                          :label="item.name"
+                          :value="item.id">
+                        </el-option>
+                      </el-select>
+                      <el-select v-model="temp.cityId" @change="cityChange" placeholder="请选择市">
+                        <el-option
+                          v-for="item in cityList"
+                          :key="item.id"
+                          :label="item.name"
+                          :value="item.id">
+                        </el-option>
+                      </el-select>
+                      <el-select v-model="temp.districtId" placeholder="请选择区">
+                        <el-option
+                          v-for="item in districtList"
+                          :key="item.id"
+                          :label="item.name"
+                          :value="item.id">
+                        </el-option>
+                      </el-select></li>
                     <li><i class="email"></i><span><em style="color:transparent">*</em>邮箱</span><input v-model="temp.email" type="tel"></li>
                      <div class="privacy">
                         <div class="read-cheackbox"><input type="checkbox"  v-model="isChecked"><i class="checkbox-icon"></i></div>
@@ -28,20 +52,74 @@
     </div>
 </template>
 <script>
-  import { RegisterMember } from '@/api/memberApi'
+  import { RegisterMember,FindAllProvinces,FindCityByProvinceId,FindAreasByCityId } from '@/api/memberApi'
   import moment from 'moment'
 
   export default {
     created () {
+<<<<<<< Updated upstream
       this.setOpenIdLocal()
+=======
+        this.findAllProvinces();
+>>>>>>> Stashed changes
     },
     data () {
       return {
         isChecked:false,
-        temp: tempInit()
+        temp: tempInit(),
+        provinceList:[],
+        cityList:[],
+        districtList:[]
       }
     },
     methods: {
+      findAllProvinces(){
+          FindAllProvinces(this.temp)
+            .then((respons) => {
+              if(respons.data){
+                this.provinceList=respons.data
+              }
+            })
+        },
+      getCityList(provinceId){
+        FindCityByProvinceId(provinceId)
+          .then((respons) => {
+            if(respons.data){
+              this.cityList=respons.data
+            }
+          })
+      },
+      getAreasList(cityId){
+        FindAreasByCityId(cityId)
+          .then((respons) => {
+            if(respons.data){
+              this.districtList=respons.data
+            }
+          })
+      },
+      provinceChange(){
+        this.cityList=[];
+        this.districtList=[];
+        if(this.temp.provinceId!="") {
+          this.getCityList(this.temp.provinceId);
+        }
+//        if(this.isShow==false){
+//          this.temp.cityId='';
+//        }else {
+//          this.isShow=false
+//        }
+      },
+      cityChange(){
+        this.districtList=[];
+        if(this.temp.cityId!="") {
+          this.getAreasList(this.temp.cityId);
+        }
+//        if(this.isShow==false){
+//          this.temp.city='';
+//        }else {
+//          this.isShow=false
+//        }
+      },
       handleSave() {
         if (this.temp.name === '') {
           this.$message({
@@ -66,6 +144,47 @@
             return false;
           }
         }
+        if (this.temp.birthDay === '') {
+          this.$message({
+            message: '请填写生日',
+            type: 'error'
+          })
+          return false;
+        }else {
+          var birth=new Date(this.temp.birth)
+          if(null !=birth){
+              this.temp.birthYear=birth.getFullYear();
+              this.temp.birthMonth=birth.getMonth()+1;
+              this.temp.birthDay=birth.getDate();
+          }else {
+            this.$message({
+              message: '请输入正确的生日',
+              type: 'error'
+            })
+            return false;
+          }
+        }
+        if (this.temp.provinceId === '') {
+          this.$message({
+            message: '请选择省',
+            type: 'error'
+          })
+          return false;
+        }
+        if (this.temp.cityId === '') {
+          this.$message({
+            message: '请选择市',
+            type: 'error'
+          })
+          return false;
+        }
+        if (this.temp.districtId === '') {
+          this.$message({
+            message: '请选择区',
+            type: 'error'
+          })
+          return false;
+        }
         if (this.temp.title === '') {
           this.$message({
             message: '请选择性别',
@@ -85,6 +204,21 @@
           }
         }
         if (this.isChecked) {
+          for (let i in this.provinceList) {
+              if(this.provinceList[i].id===this.temp.provinceId){
+                  this.temp.province=this.provinceList[i].name;
+              }
+          }
+          for (let i in this.cityList) {
+            if(this.cityList[i].id===this.temp.cityId){
+              this.temp.city=this.cityList[i].name;
+            }
+          }
+          for (let i in this.districtList) {
+            if(this.districtList[i].id===this.temp.districtId){
+              this.temp.district=this.districtList[i].name;
+            }
+          }
           RegisterMember(this.temp)
             .then((respons) => {
               if(respons.data){
@@ -100,6 +234,12 @@
     watch: {
       'handleSave': function () {
         this.handleSave()
+      },
+      'provinceChange': function () {
+        this.provinceChange()
+      },
+      'cityChange': function () {
+        this.cityChange()
       }
     }
 
@@ -112,14 +252,18 @@
       birthDay: 12,
       birthMonth: 2,
       birthYear: 1912,
-      city: "南京市",
-      district: "秦淮区",
+      city: "",
+      district: "",
+      provinceId:'',
+      cityId:'',
+      districtId:'',
       email: "",
       mobile: "",
       name: "",
-      province: "江苏省",
+      province: "",
       title: "",
-      zipcode: ""
+      zipcode: "",
+      birth:""
     }
   }
 

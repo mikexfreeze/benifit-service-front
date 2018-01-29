@@ -55,3 +55,30 @@ export function RegisterMember (argParams) {
   })
 }
 
+
+export function FindAllProvinces () {
+  return fetch({
+    url: '/basicdata/api/region/findAllProvinces',
+    method: 'get',
+  }).then(function (response) {
+    return response
+  })
+}
+
+export function FindCityByProvinceId (provinceId) {
+  return fetch({
+    url: '/basicdata/api/region/findCityByProvinceId/'+provinceId,
+    method: 'get',
+  }).then(function (response) {
+    return response
+  })
+}
+
+export function FindAreasByCityId (cityId) {
+  return fetch({
+    url: '/basicdata/api/region/findAreasByCityId/'+cityId,
+    method: 'get',
+  }).then(function (response) {
+    return response
+  })
+}
