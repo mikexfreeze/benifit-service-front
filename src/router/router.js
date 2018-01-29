@@ -27,7 +27,7 @@ const router = new Router({
       path: '/user-center/:openId',
       name: '个人中心',
       component: userCenter,
-      redirect: '/user-center/nav',
+      redirect: '/user-center/:openId/nav',
       children: [
         {path: 'nav', component: memberIcon},
         {path: 'list', component: cardDetail}
