@@ -55,3 +55,23 @@ export function RegisterMember (argParams) {
   })
 }
 
+
+// export function FindAllProvinces () {
+//   params = $.extend(params, argParams)
+//   return fetch({
+//     url: '/api/region/findAllProvinces',
+//     method: 'get',
+//   }).then(function (response) {
+//     return response
+//   })
+// }
+//
+// export function FindAllProvinces () {
+//   params = $.extend(params, argParams)
+//   return fetch({
+//     url: '/api/region/findAllProvinces',
+//     method: 'get',
+//   }).then(function (response) {
+//     return response
+//   })
+// }

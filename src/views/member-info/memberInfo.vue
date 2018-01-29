@@ -73,6 +73,12 @@
           return false;
         }
         if (this.temp.email !== '') {
+//          this.$message({
+//            message: '请填写邮箱号码',
+//            type: 'error'
+//          })
+//          return false;
+//        }else{
 
           const reg = /^[a-z0-9](?:[-_.+]?[a-z0-9]+)*@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/i;
           if (!reg.test(this.temp.email)) {
