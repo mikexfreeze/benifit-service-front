@@ -57,7 +57,8 @@
 
   export default {
     created () {
-        this.findAllProvinces();
+        this.setOpenIdLocal();
+      this.findAllProvinces();
     },
     data () {
       return {
