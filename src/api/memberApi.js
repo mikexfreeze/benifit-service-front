@@ -3,13 +3,13 @@
  */
 import fetch from '@/utils/fetch'
 
-export function GetReportList (argParams) {
+export function GetMemberInfo (argParams) {
   let params = {
-    userId: localStorage.getItem('openId') || 'm3',
+    account: process.env.WC_ACCOUNT,
   }
   params = $.extend(params, argParams)
   return fetch({
-    url: '/members/open-id/{openId}',
+    url: '/member-center/api/members/open-id/' + (localStorage.getItem('openId') || 'open_id1'),
     method: 'get',
     params: params,
   }).then(function (response) {
