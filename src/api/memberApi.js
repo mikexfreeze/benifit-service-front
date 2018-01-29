@@ -36,3 +36,22 @@ export function GetMemberBonus (argParams) {
     return response
   })
 }
+
+export function RegisterMember (argParams) {
+  let params = {
+    openId: localStorage.getItem('openId') || 'open_id19',
+    account: process.env.WC_ACCOUNT,
+    channel: "WECHAT",
+  }
+  params = $.extend(params, argParams)
+  return fetch({
+    url: '/member-center/api/register',
+    method: 'post',
+    data: params,
+  }).then(function (response) {
+    console.log('注册会员')
+    console.log(response)
+    return response
+  })
+}
+
