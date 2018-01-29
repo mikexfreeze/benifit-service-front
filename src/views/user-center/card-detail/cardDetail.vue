@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="small-bg"></div>
-            <a href="#" class="LookMore"></a>
+            <a href="/coupon-tab" class="LookMore"></a>
         </div>
         <div class="listCoupon">
             <div class="Coupon Jdetail">

@@ -82,3 +82,19 @@ export function FindAreasByCityId (cityId) {
     return response
   })
 }
+export function GetCoupons (argParams) {
+  let params = {
+    openId: localStorage.getItem('openId') || 'open_id19',
+    account: process.env.WC_ACCOUNT,
+    page:argParams.page-1,
+    size:argParams.size
+  }
+  params = $.extend(params, argParams)
+  return fetch({
+    url: '/basicdata/api/coupon-members',
+    method: 'get',
+    data: params,
+  }).then(function (response) {
+    return response
+  })
+}
