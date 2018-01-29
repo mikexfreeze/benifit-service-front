@@ -57,11 +57,7 @@
 
   export default {
     created () {
-<<<<<<< Updated upstream
-      this.setOpenIdLocal()
-=======
         this.findAllProvinces();
->>>>>>> Stashed changes
     },
     data () {
       return {
