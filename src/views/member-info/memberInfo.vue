@@ -225,6 +225,12 @@
                 })
               }
             })
+        }else {
+          this.$message({
+            message: '接受注册后才能提交！',
+            type: 'error'
+          })
+          return false;
         }
       }
     },
