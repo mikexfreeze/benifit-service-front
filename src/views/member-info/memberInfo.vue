@@ -33,6 +33,7 @@
 
   export default {
     created () {
+      this.setOpenIdLocal()
     },
     data () {
       return {

@@ -24,7 +24,7 @@ const router = new Router({
       component: HelloWorld
     },
     {
-      path: '/user-center',
+      path: '/user-center/:openId',
       name: '个人中心',
       component: userCenter,
       redirect: '/user-center/nav',
@@ -44,7 +44,7 @@ const router = new Router({
       component: couponTab
     },
     {
-      path: '/member-info',
+      path: '/member-info/:openId',
       name: '注册会员',
       component: memberInfo
     },
