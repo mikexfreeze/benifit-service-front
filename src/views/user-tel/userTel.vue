@@ -4,7 +4,7 @@
         <div class="Main">
             <div class="MainInfo">
                 <li><i class="tel"></i><span>电话</span><input type="tel"></li>
-                <li><i class="pass"></i><span>验证码</span><input type="tel"><button></button></li>
+                <li><i class="pass"></i><span>验证码</span><input type="text"><button></button></li>
             </div>
         </div>
         <div class="bgArrow"></div>
