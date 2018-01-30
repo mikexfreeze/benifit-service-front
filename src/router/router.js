@@ -24,17 +24,17 @@ const router = new Router({
       component: HelloWorld
     },
     {
-      path: '/user-center',
+      path: '/user-center/:openId',
       name: '个人中心',
       component: userCenter,
-      redirect: '/user-center/nav',
+      redirect: '/user-center/:openId/nav',
       children: [
         {path: 'nav', component: memberIcon},
         {path: 'list', component: cardDetail}
       ]
     },
     {
-      path: '/user-tel',
+      path: '/user-tel/:openId',
       name: '绑定页面',
       component: userTel
     },

@@ -8,7 +8,7 @@ import '@/assets/js/ydui.flexible.js' // rem
 
 /* eslint-disable no-new */
 import '@/assets/iconfont/iconfont'; // iconfont
-import SetUserId from '@/utils/setUserId'
+import SetOpenId from '@/utils/setOpenId'
 
 import Vue from 'vue'
 import App from './App'
@@ -22,7 +22,7 @@ Vue.prototype.stopProp = function (e) {
   e.preventDefault()
   e.stopPropagation()
 }
-Vue.prototype.setUserLocal = SetUserId
+Vue.prototype.setOpenIdLocal = SetOpenId
 
 Vue.config.productionTip = false
 

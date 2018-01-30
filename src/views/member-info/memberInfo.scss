@@ -170,10 +170,10 @@ input{
         transform: translate(-50%,-50%)
     }
     .foorterBtn{
-        position: absolute;
-        bottom: 0.23rem;
-        left: 0;
-        right: 0;
+        //position: absolute;
+        //bottom: 0.23rem;
+        //left: 0;
+        //right: 0;
         .Submit{
             width: 2.04rem;
             height: 0.78rem;
@@ -181,7 +181,7 @@ input{
             background-size: 100% 100%;
             margin:0 auto;
             border:none;
-            display: block;        
+            display: block;
             }
         p{
             text-align: center;
@@ -190,4 +190,3 @@ input{
         }
     }
 }
-   
