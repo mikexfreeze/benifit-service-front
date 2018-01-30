@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="small-bg"></div>
-            <a href="/coupon-tab" class="LookMore"></a>
+          <router-link to="/coupon-tab" class="LookMore"></router-link>
         </div>
         <div class="listCoupon">
             <div class="Coupon Jdetail">

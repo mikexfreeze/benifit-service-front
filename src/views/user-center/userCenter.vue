@@ -25,7 +25,9 @@
                 </div>
                 <div class="CardFlex">
                     <div class="PinkCrad">
-                        <span>粉卡</span>
+                      <span  v-show="member.memberType !== 'S' && member.memberType !== 'G'">粉卡</span>
+                      <span  v-show="member.memberType === 'S'">银卡</span>
+                      <span  v-show="member.memberType === 'G'">金卡</span>
                         <p class="p1">
                             <img src="../../assets/img/new/text1.png" alt="">
                         </p>

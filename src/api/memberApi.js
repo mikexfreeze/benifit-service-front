@@ -98,3 +98,18 @@ export function GetCoupons (argParams) {
     return response
   })
 }
+
+export function CheckMember (argParams) {
+  let params = {
+    account: process.env.WC_ACCOUNT,
+    openId: localStorage.getItem('openId') || 'open_id19',
+  }
+  params = $.extend(params, argParams)
+  return fetch({
+    url: '/member-center/api/account/check-member',
+    method: 'get',
+    params: params,
+  }).then(function (response) {
+    return response
+  })
+}

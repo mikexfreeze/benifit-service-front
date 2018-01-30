@@ -34,7 +34,7 @@ const router = new Router({
       ]
     },
     {
-      path: '/user-tel',
+      path: '/user-tel/:openId',
       name: '绑定页面',
       component: userTel
     },
@@ -44,7 +44,7 @@ const router = new Router({
       component: couponTab
     },
     {
-      path: '/member-info/:openId',
+      path: '/member-info',
       name: '注册会员',
       component: memberInfo
     },
