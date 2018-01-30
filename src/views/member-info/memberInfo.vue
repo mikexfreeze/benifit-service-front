@@ -15,7 +15,7 @@
                         <el-radio v-model="temp.title" label="MS">女士</el-radio>
                         <el-radio v-model="temp.title" label="MR">先生</el-radio>
                     </li>
-                    <li><i class="city"></i><span><em class="c-logoColor">*</em>省</span>
+                    <li style="margin-top: 0.42rem"><i class="city"></i><span><em class="c-logoColor">*</em>省</span>
                         <el-select v-model="temp.provinceId" @change="provinceChange" placeholder="请选择省">
                             <el-option
                                     v-for="item in provinceList"
@@ -25,7 +25,7 @@
                             </el-option>
                         </el-select>
                     </li>
-                    <li><i class="city"></i><span><em class="c-logoColor">*</em>市</span>
+                    <li style="margin-top: 0.22rem"><i class="city"></i><span><em class="c-logoColor">*</em>市</span>
                         <el-select v-model="temp.cityId" @change="cityChange" placeholder="请选择市">
                             <el-option
                                     v-for="item in cityList"
@@ -35,7 +35,7 @@
                             </el-option>
                         </el-select>
                     </li>
-                    <li><i class="city"></i><span><em class="c-logoColor">*</em>区</span>
+                    <li style="margin-top: 0.22rem"><i class="city"></i><span><em class="c-logoColor">*</em>区</span>
                         <el-select v-model="temp.districtId" placeholder="请选择区">
                             <el-option
                                     v-for="item in districtList"
