@@ -61,7 +61,7 @@
             if (response.data) {
               this.$router.push({path: '/user-center/' + localStorage.getItem('openId') + '/nav'})
             } else {
-              this.$router.push({path: '/member-info'})
+              this.$router.push({path: '/member-info/'+this.temp.mobile})
             }
           })
       }

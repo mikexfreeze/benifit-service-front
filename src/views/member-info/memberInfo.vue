@@ -7,7 +7,7 @@
                 <div class="MainInfo">
                     <li><i class="name"></i><span><em class="c-logoColor">*</em>姓名</span><input v-model="temp.name"
                                                                                                 type="text"></li>
-                    <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input v-model="temp.mobile"
+                    <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input readonly="readonly" v-model="temp.mobile"
                                                                                                type="tel"></li>
                     <li>
                         <i class="birth"></i>
@@ -74,6 +74,9 @@
   export default {
     created () {
 //      this.setOpenIdLocal()
+      if(this.$route.params.mobile){
+          this.temp.mobile=this.$route.params.mobile
+      }
       this.findAllProvinces()
     },
     data () {
