@@ -46,8 +46,8 @@
         justify-content: space-between;
         align-items: center;
     .leftPic{
-        width: 3.39rem;
-        height: 2.17rem;
+        width: 3.38rem;
+        height: 2.93rem;
         background: url(~@/assets/img/new/ios/part1@2x.png) no-repeat;
         background-size: 100% 100%;
     }
@@ -69,8 +69,8 @@
         background-size: 100% 100%;
     }
     .rightPic{
-        width: 3.39rem;
-        height: 2.17rem;
+        width: 3.73rem;
+        height: 2.59rem;
         background: url(~@/assets/img/new/ios/part2@2x.png) no-repeat;
         background-size: 100% 100%;
     }
@@ -81,7 +81,7 @@
         align-items: center;
     .leftPic{
         width: 3.4rem;
-        height: 3.41rem;
+        height: 3.76rem;
         background: url(~@/assets/img/new/ios/part3@2x.png) no-repeat;
         background-size: 100% 100%;
     }
@@ -96,16 +96,16 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0.78rem;
+        margin-bottom: 1.5rem;
     .leftPic{
-        width: 3.54rem;
-        height: 3.34rem;
+        width: 3.42rem;
+        height: 3.32rem;
         background: url(~@/assets/img/new/ios/pic4@2x.png) no-repeat;
         background-size: 100% 100%;
     }
     .rightPic{
-        width: 3.42rem;
-        height: 2.19rem;
+        width: 3.40rem;
+        height: 3.76rem;
         background: url(~@/assets/img/new/ios/part4@2x.png) no-repeat;
         background-size: 100% 100%;
     }
