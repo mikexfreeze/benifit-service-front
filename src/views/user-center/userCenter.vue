@@ -6,7 +6,7 @@
                 <span class="edit"><i class=""></i><em><router-link to="/edit-member">修改个人资料</router-link></em></span>
             </div>
             <div class="center">
-                <div class="Img"><img src="../../assets/img/mm.jpg" alt=""></div>
+                <div class="Img"><img v-if="member.headImgUrl" :src="member.headImgUrl"><img v-else src="../../assets/img/mm.jpg" alt=""></div>
                 <div class="tag"></div>
                 <div class="Card">
                     <img v-show="member.memberType !== 'S' && member.memberType !== 'G'" src="../../assets/img/new/vip.png" alt="">
