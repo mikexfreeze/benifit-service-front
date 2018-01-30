@@ -17,7 +17,7 @@
                             </div>
                             <a class="btn" href="#"></a>
                         </div>
-                </div>   
+                </div>
               <div class="ticketList">
                     <img src="~@/assets/img/new/couponbg.png" alt="">
                     <div class="txt">
@@ -28,7 +28,7 @@
                         </div>
                         <a class="btn" href="#"></a>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
         <div class="snow"></div>
@@ -37,6 +37,7 @@
     </div>
 </template>
 <script>
-    export default{}
+
+
 </script>
 <style scoped lang="scss" src="./couponTab.scss"></style>

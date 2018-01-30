@@ -7,6 +7,7 @@ import cardDetail from '@/views/user-center/card-detail/cardDetail.vue'
 import userTel from '@/views/user-tel/userTel.vue'
 import couponTab from '@/views/coupon-tab/couponTab.vue'
 import memberInfo from '@/views/member-info/memberInfo.vue'
+import editMember from '@/views/member-info/edit-member/editMember.vue'
 import barCode from '@/views/bar-code/barCode.vue'
 import memberBonus from '@/views/user-center/member-bonus/memberBonus.vue'
 import memberVip from '@/views/user-center/member-vip/memberVip.vue'
@@ -24,17 +25,17 @@ const router = new Router({
       component: HelloWorld
     },
     {
-      path: '/user-center',
+      path: '/user-center/:openId',
       name: '个人中心',
       component: userCenter,
-      redirect: '/user-center/nav',
+      redirect: '/user-center/:openId/nav',
       children: [
         {path: 'nav', component: memberIcon},
         {path: 'list', component: cardDetail}
       ]
     },
     {
-      path: '/user-tel',
+      path: '/user-tel/:openId',
       name: '绑定页面',
       component: userTel
     },
@@ -44,9 +45,14 @@ const router = new Router({
       component: couponTab
     },
     {
-      path: '/member-info',
+      path: '/member-info/:mobile',
       name: '注册会员',
       component: memberInfo
+    },
+    {
+      path: '/edit-member',
+      name: '修改会员',
+      component: editMember
     },
     {
       path: '/bar-code',

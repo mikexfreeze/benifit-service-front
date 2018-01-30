@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="small-bg"></div>
-            <a href="#" class="LookMore"></a>
+          <router-link to="/coupon-tab" class="LookMore"></router-link>
         </div>
         <div class="listCoupon">
             <div class="Coupon Jdetail">
@@ -38,11 +38,15 @@
                     <span class="w25">获取途径</span>
                 </div>
                 <ul class="orderMainInfo">
-                    <li><span class="w25">2018/1/1</span><span class="w18">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
-                    <li><span class="w25">2018/1/1</span><span class="w18">＋500</span><span class="w25">2019/1/1</span><span class="w25">消费</span></li>
+                    <li v-for="bonus in bonusList">
+                        <span class="w25">{{bonus.transactionDate | moment("YYYY/MM/DD")}}</span>
+                        <span class="w18">{{bonus.bonusPoint}}</span>
+                        <span class="w25">{{bonus.transactionDate | cptExpiryDate }}</span>
+                        <span class="w25">{{bonus.bonusPointReason}}</span>
+                    </li>
                 </ul>
             </div>
-            <router-link to="/detail" class="LookDetail"></router-link>
+            <router-link :to="{name:'会员积分'}" class="LookDetail"></router-link>
             <div class="snow"></div>
         </div>
          <div class="car"></div>

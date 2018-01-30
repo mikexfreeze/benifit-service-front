@@ -1,7 +1,7 @@
 <template>
     <div class="MenberIcon">
         <li><router-link to="list" class="icon icon1"></router-link></li>
-        <li><a href="#" class="icon icon2"></a></li>
+        <li><router-link to="/coupon-tab" class="icon icon2"></router-link></li>
         <li><router-link to="/member" class="icon icon3"></router-link></li>
     </div>
 </template>
