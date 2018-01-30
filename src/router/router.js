@@ -45,7 +45,7 @@ const router = new Router({
       component: couponTab
     },
     {
-      path: '/member-info',
+      path: '/member-info/:mobile',
       name: '注册会员',
       component: memberInfo
     },

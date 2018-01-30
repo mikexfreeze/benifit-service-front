@@ -7,7 +7,7 @@
                 <div class="MainInfo">
                     <li><i class="name"></i><span><em class="c-logoColor">*</em>姓名</span><input v-model="temp.name"
                                                                                                 type="text"></li>
-                    <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input v-model="temp.mobile"
+                    <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input  disabled v-model="temp.mobile"
                                                                                                type="tel"></li>
                     <li>
                         <i class="birth"></i>
@@ -49,7 +49,7 @@
                         </el-select>
                     </li>
                     <li><i class="email"></i><span><em style="color:transparent">*</em>邮箱</span><input
-                            v-model="temp.email" type="tel"></li>
+                            v-model="temp.email" type="text"></li>
                     <div class="privacy">
                         <div class="read-cheackbox"><input type="checkbox" v-model="isChecked"><i
                                 class="checkbox-icon"></i></div>
@@ -74,6 +74,9 @@
   export default {
     created () {
 //      this.setOpenIdLocal()
+      if(this.$route.params.mobile){
+          this.temp.mobile=this.$route.params.mobile
+      }
       this.findAllProvinces()
     },
     data () {
@@ -168,6 +171,14 @@
           return false
         } else {
           var birth = new Date(this.temp.birth)
+          var now=new Date(moment(Date.now()).format("YYYY-MM-DD"))
+          if(birth>=now){
+            this.$message({
+              message: '选择生日不能超过当前日期',
+              type: 'error'
+            })
+            return false
+          }
           if (null != birth) {
             this.temp.birthYear = birth.getFullYear()
             this.temp.birthMonth = birth.getMonth() + 1
