@@ -19,6 +19,22 @@ export function GetMemberInfo (argParams) {
   })
 }
 
+export function EditMemberInfo (argParams) {
+  let params = {
+    // account: process.env.WC_ACCOUNT,
+  }
+  params = $.extend(params, argParams)
+  return fetch({
+    url: '/member-center/api/members',
+    method: 'put',
+    data: params,
+  }).then(function (response) {
+    console.log('修改会员信息')
+    console.log(response)
+    return response
+  })
+}
+
 export function GetMemberBonus (argParams) {
   let params = {
     openId: localStorage.getItem('openId') || 'open_id1',
