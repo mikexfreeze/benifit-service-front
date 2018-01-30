@@ -9,8 +9,11 @@
                                                                                                 type="text"></li>
                     <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input v-model="temp.mobile"
                                                                                                type="tel"></li>
-                    <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input v-model="temp.birth"
-                                                                                                 type="date"></li>
+                    <li>
+                        <i class="birth"></i>
+                        <span><em class="c-logoColor">*</em>生日</span>
+                        <input v-model="temp.birth" type="date" max="2017-01-01">
+                    </li>
                     <li><i class="sex"></i><span><em class="c-logoColor">*</em>性别</span>
                         <el-radio v-model="temp.title" label="MS">女士</el-radio>
                         <el-radio v-model="temp.title" label="MR">先生</el-radio>
