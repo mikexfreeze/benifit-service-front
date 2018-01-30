@@ -165,6 +165,14 @@
           return false
         } else {
           var birth = new Date(this.temp.birth)
+          var now=new Date(moment(Date.now()).format("YYYY-MM-DD"))
+          if(birth>=now){
+            this.$message({
+              message: '选择生日不能超过当前日期',
+              type: 'error'
+            })
+            return false
+          }
           if (null != birth) {
             this.temp.birthYear = birth.getFullYear()
             this.temp.birthMonth = birth.getMonth() + 1

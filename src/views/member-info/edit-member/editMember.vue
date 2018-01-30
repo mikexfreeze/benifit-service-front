@@ -9,7 +9,7 @@
                                                                                       type="text"></li>
           <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input readonly="readonly" v-model="temp.mobile"
                                                                                      type="tel"></li>
-          <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input v-model="temp.birth"
+          <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input readonly="readonly"  v-model="temp.birth"
                                                                                        type="date"></li>
           <li><i class="sex"></i><span><em class="c-logoColor">*</em>性别</span>
             <el-radio v-model="temp.title" label="MS">女士</el-radio>
@@ -86,7 +86,7 @@
         GetMemberInfo()
           .then((response)=>{
             this.temp = response.data
-            this.temp.birth=this.temp.birthYear+'-'+("0" + (this.temp.birthMonth + 1)).slice(-2) +'-'+ ("0" + this.temp.birthDay).slice(-2);
+            this.temp.birth=this.temp.birthYear+'-'+("0" + (this.temp.birthMonth)).slice(-2) +'-'+ ("0" + this.temp.birthDay).slice(-2);
             this.initCitys()
           })
       },
@@ -180,6 +180,13 @@
         } else {
           var birth = new Date(this.temp.birth)
           if (null != birth) {
+            if(birth>Date.now()){
+              this.$message({
+                message: '选择生日不能超过当前日期',
+                type: 'error'
+              })
+              return false
+            }
             this.temp.birthYear = birth.getFullYear()
             this.temp.birthMonth = birth.getMonth() + 1
             this.temp.birthDay = birth.getDate()
