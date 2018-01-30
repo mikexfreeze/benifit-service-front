@@ -1,8 +1,7 @@
 <template>
     <div class="content2">
-        <p class="Ptext">粉卡会员12个月内消费金额累计达到1200元，
-            即可升级为银卡会员，等级有效期为一年，
-            累计消费1500元可延长会籍一年</p>
+        <p class="Ptext">粉卡会员12个月内消费金额累计达到1200元，即可升级为银卡会员，
+        等级有效期为一年，累计消费1500可延长会籍一年</p>
         <div class="content-part1">
             <div class="leftPic"></div>
             <div class="rightPic"></div>
@@ -117,7 +116,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             .leftPic{
                 width: 3.54rem;
                 height: 3.34rem;
