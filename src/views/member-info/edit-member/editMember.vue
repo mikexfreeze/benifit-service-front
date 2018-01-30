@@ -6,7 +6,7 @@
       <div class="form">
         <div class="MainInfo">
           <li><i class="name"></i><span><em class="c-logoColor">*</em>姓名</span><input v-model="temp.name"
-                                                                                      type="tel"></li>
+                                                                                      type="text"></li>
           <li><i class="tel"></i><span><em class="c-logoColor">*</em>手机</span><input readonly="readonly" v-model="temp.mobile"
                                                                                      type="tel"></li>
           <li><i class="birth"></i><span><em class="c-logoColor">*</em>生日</span><input v-model="temp.birth"
