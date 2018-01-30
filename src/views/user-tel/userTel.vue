@@ -1,5 +1,6 @@
 <template>
     <div class="bg">
+    <div class="snow"></div>
         <div class="Top"></div>
         <div class="Main">
             <div class="MainInfo">
