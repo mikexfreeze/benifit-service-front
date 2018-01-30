@@ -104,8 +104,8 @@
         background-size: 100% 100%;
     }
     .rightPic{
-        width: 3.40rem;
-        height: 3.76rem;
+        width: 3.42rem;
+        height: 3.32rem;
         background: url(~@/assets/img/new/ios/part4@2x.png) no-repeat;
         background-size: 100% 100%;
     }
