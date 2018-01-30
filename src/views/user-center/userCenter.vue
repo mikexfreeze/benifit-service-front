@@ -3,7 +3,7 @@
         <div class="mainCenter">
             <div class="head">
                 <span class="name">亲爱的&nbsp;&nbsp;<i>{{member.name}}</i></span>
-                <span class="edit"><i class=""></i><em>修改个人资料</em></span>
+                <span class="edit"><i class=""></i><em><router-link to="/edit-member">修改个人资料</router-link></em></span>
             </div>
             <div class="center">
                 <div class="Img"><img src="../../assets/img/mm.jpg" alt=""></div>

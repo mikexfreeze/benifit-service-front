@@ -70,7 +70,7 @@
 
   export default {
     created () {
-      this.setOpenIdLocal()
+//      this.setOpenIdLocal()
       this.findAllProvinces()
     },
     data () {
@@ -113,6 +113,8 @@
         if (this.temp.provinceId != '') {
           this.getCityList(this.temp.provinceId)
         }
+        this.temp.cityId='';
+        this.temp.districtId='';
 //        if(this.isShow==false){
 //          this.temp.cityId='';
 //        }else {
@@ -124,6 +126,7 @@
         if (this.temp.cityId != '') {
           this.getAreasList(this.temp.cityId)
         }
+        this.temp.districtId='';
 //        if(this.isShow==false){
 //          this.temp.city='';
 //        }else {
@@ -236,6 +239,7 @@
                   message: '创建成功',
                   type: 'success'
                 })
+                this.$router.push({path: '/user-center/' + localStorage.getItem('openId') + '/nav'})
               }
             })
         } else {
