@@ -5,7 +5,13 @@
         <div class="Main">
             <div class="MainInfo">
                 <li><i class="tel"></i><span>电话</span><input v-model="temp.mobile" type="tel"></li>
-                <li><i class="pass"></i><span>验证码</span><input v-model="temp.code" type="tel"><button></button></li>
+                <li>
+                    <i class="pass"></i>
+                    <span>验证码</span>
+                    <input v-model="temp.code" type="tel">
+                    <button v-if="waitTime === 0" @click="sendVerifCode"></button>
+                    <button v-else disabled="disabled">重发({{waitTime}})</button>
+                </li>
             </div>
         </div>
         <div class="bgArrow"></div>
@@ -15,7 +21,7 @@
 </template>
 <script>
 
-  import { CheckMember } from '@/api/memberApi'
+  import { CheckMember, GetVerifCode } from '@/api/memberApi'
   import moment from 'moment'
 
   export default {
@@ -26,13 +32,13 @@
       return {
         temp: {
           mobile: "",
-          code: ""
-        }
+          code: "",
+        },
+        waitTime: 0
       }
     },
     methods: {
-      checkMember (arg) {
-
+      verifMobile () {
         if (this.temp.mobile === '') {
           this.$message({
             message: '请填写手机号码',
@@ -47,7 +53,14 @@
               type: 'error'
             })
             return false
+          } else {
+            return true
           }
+        }
+      },
+      checkMember (arg) {
+        if(!this.verifMobile()){
+          return
         }
 
         if (this.temp.code === '') {
@@ -65,6 +78,25 @@
               this.$router.push({path: '/member-info/'+this.temp.mobile})
             }
           })
+      },
+      sendVerifCode () {
+        if(!this.verifMobile()){
+          return
+        }
+        let thiz = this
+        this.waitTime = 60
+        function countTime () {
+          setTimeout(()=>{
+            console.log(1)
+            if(thiz.waitTime > 0) {
+              thiz.waitTime --
+              countTime()
+            }
+          },1000)
+        }
+        countTime()
+        GetVerifCode(this.temp.mobile)
+
       }
     },
     watch: {

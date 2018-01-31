@@ -75,6 +75,12 @@ input{
                     font-size: 0.3rem;
                 }
                 button{
+                    &:disabled{
+                        background: #f67682;
+                        border-radius: 0.1rem;
+                    }
+                    color: #ffffff;
+                    //font-weight: bold;
                     width: 1.45rem;
                     height: 0.43rem;
                     background: url(../../assets/img/ios/yzm@2x.png) no-repeat;

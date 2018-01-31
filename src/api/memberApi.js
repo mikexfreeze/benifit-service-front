@@ -129,3 +129,15 @@ export function CheckMember (argParams) {
     return response
   })
 }
+
+export function GetVerifCode (mobile) {
+  return fetch({
+    // url: '/captcha/api/sms/sendSms/' + (localStorage.getItem('openId') || '112') + '/' + mobile,
+    url: '/captcha/api/sms/sendSms/' + ('112') + '/' + mobile,
+    method: 'get',
+  }).then(function (response) {
+    console.log("获取验证码")
+    console.log(response)
+    return response
+  })
+}
