@@ -21,8 +21,8 @@
                             <p>{{member.memberCode}}</p>
                         </div>
                         <div class="lastTime">
-                            <p>会员卡有效期</p>
-                            <p>{{member.membershipPeriodEndDate | moment("YYYY.MM.DD")}}</p>
+                            <!--<p>会员卡有效期</p>-->
+                            <!--<p>{{member.membershipPeriodEndDate | moment("YYYY.MM.DD")}}</p>-->
                         </div>
                     </div>
                 </div>
