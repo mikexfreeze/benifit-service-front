@@ -8,10 +8,12 @@
             <div class="center">
                 <div class="Img"><img v-if="member.headImgUrl" :src="member.headImgUrl"><img v-else src="../../assets/img/mm.jpg" alt=""></div>
                 <div class="tag"></div>
+                <div v-show="" class="Graytag"></div>
                 <div class="Card">
                     <img v-show="member.memberType !== 'S' && member.memberType !== 'G'" src="../../assets/img/new/vip.png" alt="">
                     <img v-show="member.memberType === 'S'" src="../../assets/img/new/Silver-card/Silver-card.png" alt="">
                     <img v-show="member.memberType === 'G'" src="../../assets/img/new/Gold-card/Gold-card.png" alt="">
+                    <img v-show="member.memberType === 'N'" src="../../assets/img/new/gray-card@2x.png" alt="">
                     <div class="SmallErma"><img src="../../assets/img/new/smallErma@2x.png" alt=""></div>
                     <div class="cardTime">
                         <div class="cardNum">
@@ -26,15 +28,16 @@
                 </div>
                 <div class="CardFlex">
                     <div class="PinkCrad">
-                      <span  v-show="member.memberType !== 'S' && member.memberType !== 'G'">粉卡</span>
-                      <span  v-show="member.memberType === 'S'">银卡</span>
-                      <span  v-show="member.memberType === 'G'">金卡</span>
+                      <span class="grayColor" v-show="member.memberType == 'N'"></span>
+                      <span class='pinkName'  v-show="member.memberType !== 'S' && member.memberType !== 'G'">粉卡</span>
+                      <span class='pinkName' v-show="member.memberType === 'S'">银卡</span>
+                      <span class='pinkName' v-show="member.memberType === 'G'">金卡</span>
                         <p class="p1">
                             <img src="../../assets/img/new/text1.png" alt="">
                         </p>
                     </div>
                     <div class="PinkCrad">
-                        <span>{{member.bonusPointBalance || 0}}</span>
+                        <span class='pinkName'>{{member.bonusPointBalance || 0}}</span>
                         <p class="p2">
                             <img src="../../assets/img/new/text2.png" alt="">
                         </p>

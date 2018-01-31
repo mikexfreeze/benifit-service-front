@@ -68,6 +68,20 @@
             margin-top: -0.4rem;
             z-index: 9;
         }
+        .Graytag{
+            width: 4.98rem;
+            height:0.92rem;
+            background: url(../../assets/img/gray-tag@2x.png) no-repeat;
+            background-size: 100% 100%;
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 0.3rem;
+            text-align: center;
+            line-height: 0.92rem;
+            position: relative;
+            margin-top: -0.4rem;
+            z-index: 9;
+        }
         .Card{
             width: 100%;
             height: 3.98rem;
@@ -127,7 +141,7 @@
                 margin-right: 0;
             }
             .PinkCrad{
-                span{
+                .pinkName{
                     color: #ff7d9b;
                     display: block;
                     font-size: 0.56rem;
@@ -137,6 +151,18 @@
                     padding-bottom:  0.22rem;
                     margin:0;
                     padding:0;
+                }
+                .grayColor{
+                    width: 0.43rem;
+                    height: 0.08rem;
+                    background: #999999;
+                    margin:0 auto;
+                    display: block;
+                    font-size: 0.56rem;
+                    text-align: center;
+                    font-weight: 700;
+                    margin-top: 0.16rem;
+                    margin-bottom:  0.3rem;
                 }
                 p{
                     padding:0;
