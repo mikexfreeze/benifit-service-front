@@ -1,12 +1,12 @@
 <template>
     <div class="mainContainer">
         <div class="title"><img src="~@/assets/img/bar-code/title-img.png" alt=""></div>
-        <div class="bar-code-container"><img src="~@/assets/img/bar-code/bar-code.png" alt=""></div>
+        <div class="bar-code-container"><img src="~@/assets/img/bar-code/bigErma@2x.png" alt=""></div>
         <div class="code-text-container">
-            <span class="code">3535 9274 2748</span>
+            <span class="code">3535 9274 2748 2748</span>
         </div>
         <div class="validity">
-            <span class="validity-text">有效期：2017/11/1-2017/11/30</span>
+            <span class="validity-text">使用时请向工作人员出示</span>
         </div>
         <div class="foot">
             <img src="~@/assets/img/bar-code/foot-img.png" alt="">

@@ -30,12 +30,14 @@
                 }
             }
             .name{
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                width: 40%;
                 i{
                     padding-bottom: 2px;
                     border-bottom: 1px solid #000;
-                    overflow: hidden;
-                    white-space: nowrap;
-                    text-overflow: ellipsis;
                 }
             }
     }
@@ -75,6 +77,17 @@
             img{
                 width: 100%;
                 height: 100%;
+            }
+            .SmallErma{
+                width: 0.48rem;
+                height: 0.47rem;
+                position: absolute;
+                right:0.34rem;
+                top: 0.3rem;
+            }
+            .SmallErma img{
+                width: 100%;
+                height: 0.47rem;
             }
             .cardTime{
                 display: flex;

@@ -1,9 +1,10 @@
 <template>
     <div class="TabContent">
         <div class="Tab">
-            <div :class="{active: couponStatus === 'COUPON_ALLOCATION'}" @click="couponStatus = 'COUPON_ALLOCATION'">未使用优惠券</div>
-            <div :class="{active: couponStatus === 'COUPON_PICKUP'}" @click="couponStatus = 'COUPON_PICKUP'">已使用优惠券</div>
-            <div :class="{active: couponStatus === 'COUPON_REDEEM'}" @click="couponStatus = 'COUPON_REDEEM'">已过期优惠券</div>
+            <div class="tabs" :class="{active: couponStatus === 'COUPON_ALLOCATION'}" @click="couponStatus = 'COUPON_ALLOCATION'">未使用</div>
+            <div class="tabs" :class="{active: couponStatus === ''}" @click="couponStatus = ''">未领取</div>
+            <div class="tabs" :class="{active: couponStatus === 'COUPON_PICKUP'}" @click="couponStatus = 'COUPON_PICKUP'">已使用</div>
+            <div class="tabs" :class="{active: couponStatus === 'COUPON_REDEEM'}" @click="couponStatus = 'COUPON_REDEEM'">已过期</div>
         </div>
         <div class="content">
             <div class="listCoupon">
@@ -70,7 +71,6 @@
         this.getCoupons({couponStatus})
       }
     }
-
   }
 </script>
 <style scoped lang="scss" src="./couponTab.scss"></style>
