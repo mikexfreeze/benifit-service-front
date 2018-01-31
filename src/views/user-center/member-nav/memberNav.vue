@@ -1,7 +1,9 @@
 <template>
     <div class="MenberIcon">
         <li><router-link to="list" class="icon icon1"></router-link></li>
+        <li v-show=""><a class="GrayIcon1"></a></li>
         <li><router-link to="/coupon-tab" class="icon icon2"></router-link></li>
+         <li v-show=""><a class="GrayIcon2"></a></li>
         <li><router-link to="/member" class="icon icon3"></router-link></li>
     </div>
 </template>
@@ -41,6 +43,18 @@
                 width: 1.7rem;
                 height: 1.76rem;
                 background: url(~@/assets/img/new/member.png) no-repeat;
+                background-size: contain;
+            }
+            .GrayIcon1{
+                 width: 1.7rem;
+                height: 1.76rem;
+                background: url(~@/assets/img/new/gray-detail@2x.png) no-repeat;
+                background-size: contain;
+            }
+             .GrayIcon1{
+                 width: 1.7rem;
+                height: 1.76rem;
+                background: url(~@/assets/img/new/gray-cardcenter@2x.png) no-repeat;
                 background-size: contain;
             }
             p{
