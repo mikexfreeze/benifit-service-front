@@ -134,7 +134,7 @@ export function GetVerifCode (mobile) {
   return fetch({
     // url: '/captcha/api/sms/sendSms/' + (localStorage.getItem('openId') || '112') + '/' + mobile,
     url: '/captcha/api/sms/sendSms/' + ('112') + '/' + mobile,
-    method: 'get',
+    method: 'post',
   }).then(function (response) {
     console.log("获取验证码")
     console.log(response)
