@@ -2,7 +2,7 @@
     <div class="card-detail-con">
         <div class="listCoupon mb">
             <div class="Coupon"></div>
-            <div class="ticketList">
+            <div v-for="card in cardList" class="ticketList">
                 <img src="~@/assets/img/new/couponbg.png" alt="">
                 <div class="txt">
                     <div class="TopTxt">
@@ -13,21 +13,21 @@
                     <a class="btn" href="#"></a>
                 </div>
             </div>
-            <div class="ticketList">
-                <img src="~@/assets/img/new/couponbg.png" alt="">
-                <div class="txt">
-                    <div class="TopTxt">
-                        <h3>Benefit 服务券</h3>
-                        <p class="Time">2017/11/01-2017/11/30</p>
-                        <p class="store">*仅限XXXX门店使用</p>
-                    </div>
-                    <a class="btn" href="#"></a>
-                </div>
-            </div>
+            <!--<div class="ticketList">-->
+                <!--<img src="~@/assets/img/new/couponbg.png" alt="">-->
+                <!--<div class="txt">-->
+                    <!--<div class="TopTxt">-->
+                        <!--<h3>Benefit 服务券</h3>-->
+                        <!--<p class="Time">2017/11/01-2017/11/30</p>-->
+                        <!--<p class="store">*仅限XXXX门店使用</p>-->
+                    <!--</div>-->
+                    <!--<a class="btn" href="#"></a>-->
+                <!--</div>-->
+            <!--</div>-->
             <div class="small-bg"></div>
           <router-link to="/coupon-tab" class="LookMore"></router-link>
         </div>
-        <div class="listCoupon">
+        <div v-show="isShowBonus" class="listCoupon">
             <div class="Coupon Jdetail">
             </div>
             <div class="ListInfo">
