@@ -87,7 +87,6 @@
         this.waitTime = 60
         function countTime () {
           setTimeout(()=>{
-            console.log(1)
             if(thiz.waitTime > 0) {
               thiz.waitTime --
               countTime()

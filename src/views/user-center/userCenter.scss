@@ -55,9 +55,11 @@
             }
         }
         .tag{
+            &.grey {background-image: url(~@/assets/img/new/grey-card-tag.png);}
+
             width: 4.98rem;
             height:0.92rem;
-            background: url(../../assets/img/new/meber-tag.png) no-repeat;
+            background-image: url(../../assets/img/new/meber-tag.png);
             background-size: 100% 100%;
             margin: 0 auto;
             color: #ffffff;
@@ -67,6 +69,7 @@
             position: relative;
             margin-top: -0.4rem;
             z-index: 9;
+
         }
         .Graytag{
             width: 4.98rem;

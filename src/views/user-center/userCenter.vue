@@ -10,13 +10,13 @@
                     <img v-if="member.headImgUrl" :src="member.headImgUrl">
                     <img v-else src="../../assets/img/mm.jpg" alt="">
                 </div>
-                <div class="tag"></div>
+                <div class="tag" :class="{grey: member.memberType === 'C'}"></div>
                 <div v-show="" class="Graytag"></div>
                 <div class="Card">
-                    <img v-show="member.memberType !== 'S' && member.memberType !== 'G'" src="../../assets/img/new/vip.png" alt="">
+                    <img v-show="member.memberType === 'P'" src="../../assets/img/new/vip.png" alt="">
                     <img v-show="member.memberType === 'S'" src="../../assets/img/new/Silver-card/Silver-card.png" alt="">
                     <img v-show="member.memberType === 'G'" src="../../assets/img/new/Gold-card/Gold-card.png" alt="">
-                    <img v-show="member.memberType === 'N'" src="../../assets/img/new/gray-card@2x.png" alt="">
+                    <img v-show="member.memberType === 'C'" src="../../assets/img/new/gray-card@2x.png" alt="">
                     <div class="SmallErma"><img src="../../assets/img/new/smallErma@2x.png" alt=""></div>
                     <div class="cardTime">
                         <div class="cardNum">
