@@ -31,8 +31,8 @@
                 </div>
                 <div class="CardFlex">
                     <div class="PinkCrad">
-                      <span class="grayColor" v-show="member.memberType == 'N'"></span>
-                      <span class='pinkName'  v-show="member.memberType !== 'S' && member.memberType !== 'G'">粉卡</span>
+                      <span class="grayColor" v-show="member.memberType === 'C'">灰卡</span>
+                      <span class='pinkName' v-show="member.memberType === 'P'">粉卡</span>
                       <span class='pinkName' v-show="member.memberType === 'S'">银卡</span>
                       <span class='pinkName' v-show="member.memberType === 'G'">金卡</span>
                         <p class="p1">
